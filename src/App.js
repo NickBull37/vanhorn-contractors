@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Box, ThemeProvider, CssBaseline } from '@mui/material';
-import { Header, Footer, ContactForm } from './components';
+import { Box } from '@mui/material';
+import { Header, Footer } from './components';
 import { HomePage, AboutPage, ServicesPage, GalleryPage, ContactPage } from './components';
 
 

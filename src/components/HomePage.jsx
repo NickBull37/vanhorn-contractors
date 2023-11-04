@@ -2,7 +2,7 @@ import React from 'react';
 import { styled } from '@mui/material/styles';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Box, Stack, Typography, Button } from '@mui/material';
-import { heroImage } from '../utils/constants';
+import { cabinet, paint, furniture } from '../utils/constants';
 
 const theme = createTheme({
     palette: {
@@ -73,32 +73,45 @@ const HomePage = () => {
                     </Box>
                 </Box>
             </Box>
-            {/* <Box className="hero-text">
-                <Typography variant="h3" pb={1}>
-                    Expert Contractor Services
-                </Typography>
-                <Typography variant="h5" pb={4}>
-                    Serving Delaware & Chester County PA
-                </Typography>
-                <Typography variant="h4" mb={6}>
-                    (555)-555-5555
-                </Typography>
-                <Box
-                    display="flex"
-                    justifyContent="space-evenly"
-                >
-                    <BrownButton size="large" variant="contained" href="/services" sx={{ backgroundColor: "#59372E" }}>
-                        Services
-                    </BrownButton>
-                    <BrownButton size="large" variant="contained" href="/gallery" sx={{ backgroundColor: "#59372E" }}>
-                        Gallery
-                    </BrownButton>
-                </Box>
-            </Box> */}
             <Box
                 display="flex"
                 justifyContent="center"
-                mt={8}
+                mt={12}
+                mb={4}
+            >
+                <Typography variant="h2">
+                    Services
+                </Typography>
+            </Box>
+            <Box
+                display="flex"
+                flexDirection={{ xs: "column", md: "row" }}
+                justifyContent="space-evenly"
+                alignItems={{ xs: "center", md: "inherit" }}
+            >
+                <Stack alignItems="center">
+                    <Box>
+                        <img src={cabinet} height="150px" alt="" />
+                    </Box>
+                    <Typography sx={{ fontSize: "2rem" }}>Custom Cabinets</Typography>
+                </Stack>
+                <Stack alignItems="center">
+                    <Box>
+                        <img src={paint} height="150px" alt="" />
+                    </Box>
+                    <Typography sx={{ fontSize: "2rem" }}>Painting</Typography>
+                </Stack>
+                <Stack alignItems="center">
+                    <Box>
+                        <img src={furniture} height="150px" alt="" />
+                    </Box>
+                    <Typography sx={{ fontSize: "2rem" }}>Custom Furniture</Typography>
+                </Stack>
+            </Box>
+            <Box
+                display="flex"
+                justifyContent="center"
+                mt={16}
                 mb={4}
             >
                 <Typography variant="h2">
@@ -111,11 +124,11 @@ const HomePage = () => {
                 flexDirection={{ xs: "column", md: "row" }}
                 justifyContent="center"
                 alignItems={{ xs: "center", md: "inherit" }}
-                gap={8}
+                gap={6}
             >
                 <Stack
-                    width="350px"
-                    gap={1}
+                    width="300px"
+                    gap={2}
                     sx={{
                         background: "#71717a",
                         borderRadius: "10px",
@@ -126,8 +139,8 @@ const HomePage = () => {
                     <Typography>"If you are looking for neat, experienced, and quality workmanship, Vanhorn Contractors provides it at every level! Their work is exceptional and first class."</Typography>
                 </Stack>
                 <Stack
-                    width="350px"
-                    gap={1}
+                    width="300px"
+                    gap={2}
                     sx={{
                         background: "#71717a",
                         borderRadius: "10px",
@@ -138,8 +151,8 @@ const HomePage = () => {
                     <Typography>"Most recently they installed 2 replacement interior doors. This was on short notice too. Good guys who care about their work and it shows!!"</Typography>
                 </Stack>
                 <Stack
-                    width="350px"
-                    gap={1}
+                    width="300px"
+                    gap={2}
                     sx={{
                         background: "#71717a",
                         borderRadius: "10px",
@@ -148,6 +161,18 @@ const HomePage = () => {
                 >
                     <Typography sx={{ fontSize: "1.25rem" }}>Robert&nbsp;&nbsp;<span>Concord, PA</span></Typography>
                     <Typography>"They were amazing form start to finish. I would recommend VanHorn Contractors to anyone!"</Typography>
+                </Stack>
+                <Stack
+                    width="300px"
+                    gap={2}
+                    sx={{
+                        background: "#71717a",
+                        borderRadius: "10px",
+                        p: "20px"
+                    }}
+                >
+                    <Typography sx={{ fontSize: "1.25rem" }}>Simon&nbsp;&nbsp;<span>Chichester, PA</span></Typography>
+                    <Typography>"I would recommend these guys to anyone looking to conduct home renovations. Our carpenter showed up on time ready to work and left the work site clean at the end of each day."</Typography>
                 </Stack>
             </Box>
         </Box>
