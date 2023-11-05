@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/vanhorn-contractors/static/css/main.61646fb9.css",
-    "main.js": "/vanhorn-contractors/static/js/main.61d06db9.js",
+    "main.js": "/vanhorn-contractors/static/js/main.46dd7566.js",
     "static/media/workbench-hero-test.jpg": "/vanhorn-contractors/static/media/workbench-hero-test.b74ffcc39da2143f0b08.jpg",
     "static/media/carpentry.png": "/vanhorn-contractors/static/media/carpentry.103215e14db629326df1.png",
     "static/media/placeholder.jpg": "/vanhorn-contractors/static/media/placeholder.e83e00e04a871eaf1317.jpg",
     "index.html": "/vanhorn-contractors/index.html",
     "main.61646fb9.css.map": "/vanhorn-contractors/static/css/main.61646fb9.css.map",
-    "main.61d06db9.js.map": "/vanhorn-contractors/static/js/main.61d06db9.js.map"
+    "main.46dd7566.js.map": "/vanhorn-contractors/static/js/main.46dd7566.js.map"
   },
   "entrypoints": [
     "static/css/main.61646fb9.css",
-    "static/js/main.61d06db9.js"
+    "static/js/main.46dd7566.js"
   ]
 }
