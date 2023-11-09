@@ -1,7 +1,8 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { Box, Stack, Typography, Button } from '@mui/material';
+import { Box, Stack, Typography, Button, Card, CardMedia, Paper } from '@mui/material';
 import { cabinet, paint, furniture } from '../utils/constants';
+import { cabinetService, paintingService, furnitureService, electricalService } from '../utils/constants';
 
 const BrownButton = styled(Button)(() => ({
     '&:hover': {
@@ -12,7 +13,7 @@ const BrownButton = styled(Button)(() => ({
 const HomePage = () => {
 
     return (
-        <Box id="homepage" mb={8}>
+        <Box id="homepage" mb={0}>
             <Box
                 className="hero-img"
             >
@@ -62,108 +63,183 @@ const HomePage = () => {
                     </Box>
                 </Box>
             </Box>
-            <Box
-                display="flex"
-                justifyContent="center"
-                mt={12}
-                mb={4}
+            <Stack
+                py={8}
+                sx={{ backgroundColor: "#3e3e41" }}
             >
-                <Typography variant="h2">
-                    Services
-                </Typography>
-            </Box>
-            <Box
-                display="flex"
-                flexDirection={{ xs: "column", md: "row" }}
-                justifyContent="space-evenly"
-                alignItems={{ xs: "center", md: "inherit" }}
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    mb={{ xs: 10, md: 6 }}
+                >
+                    <Typography variant="h2">
+                        Services
+                    </Typography>
+                </Box>
+                <Box
+                    display="flex"
+                    flexDirection={{ xs: "column", md: "row" }}
+                    justifyContent="space-evenly"
+                    alignItems={{ xs: "center", md: "inherit" }}
+                    gap={{ xs: 12, md: 0 }}
+                >
+                    <Stack alignItems="center">
+                        <Card
+                            elevation={12}
+                            raised={true}
+                            sx={{
+                                maxWidth: { xs: "300px", md: "225px" },
+                                minWidth: { xs: "300px", md: "225px" },
+                            }}
+                        >
+                            <CardMedia
+                                sx={{
+                                    height: {xs: 200, md: 150 }
+                                }}
+                                image={cabinetService}
+                                title="green iguana"
+                            >
+
+                            </CardMedia>
+                        </Card>
+                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Custom Cabinets</Typography>
+                    </Stack>
+                    <Stack alignItems="center">
+                        <Card
+                            elevation={12}
+                            raised={true}
+                            sx={{
+                                maxWidth: { xs: "300px", md: "225px" },
+                                minWidth: { xs: "300px", md: "225px" },
+                            }}
+                        >
+                            <CardMedia
+                                sx={{
+                                    height: {xs: 200, md: 150 }
+                                }}
+                                image={paintingService}
+                                title="green iguana"
+                            >
+
+                            </CardMedia>
+                        </Card>
+                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Painting</Typography>
+                    </Stack>
+                    <Stack alignItems="center">
+                        <Card
+                            elevation={12}
+                            raised={true}
+                            sx={{
+                                maxWidth: { xs: "300px", md: "225px" },
+                                minWidth: { xs: "300px", md: "225px" },
+                            }}
+                        >
+                            <CardMedia
+                                sx={{
+                                    height: {xs: 200, md: 150 }
+                                }}
+                                image={furnitureService}
+                                title="green iguana"
+                            >
+
+                            </CardMedia>
+                        </Card>
+                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Custom Furniture</Typography>
+                    </Stack>
+                    <Stack alignItems="center">
+                        <Card
+                            elevation={12}
+                            raised={true}
+                            sx={{
+                                maxWidth: { xs: "300px", md: "225px" },
+                                minWidth: { xs: "300px", md: "225px" },
+                            }}
+                        >
+                            <CardMedia
+                                sx={{
+                                    height: {xs: 200, md: 150 }
+                                }}
+                                image={electricalService}
+                                title="green iguana"
+                            >
+
+                            </CardMedia>
+                        </Card>
+                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Electrical Work</Typography>
+                    </Stack>
+                </Box>
+            </Stack>
+            <Stack
+                py={8}
+                sx={{ backgroundColor: "#525256" }}
             >
-                <Stack alignItems="center">
-                    <Box>
-                        <img src={cabinet} height="150px" alt="" />
-                    </Box>
-                    <Typography sx={{ fontSize: "2rem" }}>Custom Cabinets</Typography>
-                </Stack>
-                <Stack alignItems="center">
-                    <Box>
-                        <img src={paint} height="150px" alt="" />
-                    </Box>
-                    <Typography sx={{ fontSize: "2rem" }}>Painting</Typography>
-                </Stack>
-                <Stack alignItems="center">
-                    <Box>
-                        <img src={furniture} height="150px" alt="" />
-                    </Box>
-                    <Typography sx={{ fontSize: "2rem" }}>Custom Furniture</Typography>
-                </Stack>
-            </Box>
-            <Box
-                display="flex"
-                justifyContent="center"
-                mt={16}
-                mb={4}
-            >
-                <Typography variant="h2">
-                    Testimonials
-                </Typography>
-            </Box>
-            <Box
-                className="testimonials"
-                display="flex"
-                flexDirection={{ xs: "column", md: "row" }}
-                justifyContent="center"
-                alignItems={{ xs: "center", md: "inherit" }}
-                gap={6}
-            >
-                <Stack
-                    width="300px"
-                    gap={2}
-                    sx={{
-                        background: "#71717a",
-                        borderRadius: "10px",
-                        p: "20px"
-                    }}
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    mb={6}
                 >
-                    <Typography sx={{ fontSize: "1.25rem" }}>Chris&nbsp;&nbsp;<span>Malvern, PA</span></Typography>
-                    <Typography>"If you are looking for neat, experienced, and quality workmanship, Vanhorn Contractors provides it at every level! Their work is exceptional and first class."</Typography>
-                </Stack>
-                <Stack
-                    width="300px"
-                    gap={2}
-                    sx={{
-                        background: "#71717a",
-                        borderRadius: "10px",
-                        p: "20px"
-                    }}
+                    <Typography variant="h2">
+                        Testimonials
+                    </Typography>
+                </Box>
+                <Box
+                    className="testimonials"
+                    display="flex"
+                    flexDirection={{ xs: "column", md: "row" }}
+                    justifyContent="center"
+                    alignItems={{ xs: "center", md: "inherit" }}
+                    gap={6}
                 >
-                    <Typography sx={{ fontSize: "1.25rem" }}>Matt&nbsp;&nbsp;<span>Glen Mills, PA</span></Typography>
-                    <Typography>"Most recently they installed 2 replacement interior doors. This was on short notice too. Good guys who care about their work and it shows!!"</Typography>
-                </Stack>
-                <Stack
-                    width="300px"
-                    gap={2}
-                    sx={{
-                        background: "#71717a",
-                        borderRadius: "10px",
-                        p: "20px"
-                    }}
-                >
-                    <Typography sx={{ fontSize: "1.25rem" }}>Robert&nbsp;&nbsp;<span>Concord, PA</span></Typography>
-                    <Typography>"They were amazing form start to finish. I would recommend VanHorn Contractors to anyone!"</Typography>
-                </Stack>
-                <Stack
-                    width="300px"
-                    gap={2}
-                    sx={{
-                        background: "#71717a",
-                        borderRadius: "10px",
-                        p: "20px"
-                    }}
-                >
-                    <Typography sx={{ fontSize: "1.25rem" }}>Simon&nbsp;&nbsp;<span>Chichester, PA</span></Typography>
-                    <Typography>"I would recommend these guys to anyone looking to conduct home renovations. Our carpenter showed up on time ready to work and left the work site clean at the end of each day."</Typography>
-                </Stack>
-            </Box>
+                    <Paper elevation={8} sx={{ background: "#71717a" }}>
+                        <Stack
+                            width="300px"
+                            gap={2}
+                            sx={{
+                                p: "20px"
+                            }}
+                            >
+                            <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Chris&nbsp;-&nbsp;<span>Malvern, PA</span></Typography>
+                            <Typography color="#fff">"If you are looking for neat, experienced, and quality workmanship, Vanhorn Contractors provides it at every level! Their work is exceptional and first class."</Typography>
+                        </Stack>
+                    </Paper>
+                    <Paper elevation={8} sx={{ background: "#71717a" }}>
+                        <Stack
+                            width="300px"
+                            gap={2}
+                            sx={{
+                                p: "20px"
+                            }}
+                            >
+                            <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Matt&nbsp;-&nbsp;<span>Glen Mills, PA</span></Typography>
+                            <Typography color="#fff">"Most recently they installed 2 replacement interior doors. This was on short notice too. Good guys who care about their work and it shows!!"</Typography>
+                        </Stack>
+                    </Paper>
+                    <Paper elevation={8} sx={{ background: "#71717a" }}>
+                        <Stack
+                            width="300px"
+                            gap={2}
+                            sx={{
+                                p: "20px"
+                            }}
+                        >
+                            <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Robert&nbsp;-&nbsp;<span>Concord, PA</span></Typography>
+                            <Typography color="#fff">"They were amazing form start to finish. I would recommend VanHorn Contractors to anyone!"</Typography>
+                        </Stack>
+                    </Paper>
+                    <Paper elevation={8} sx={{ background: "#71717a" }}>
+                        <Stack
+                            width="300px"
+                            gap={2}
+                            sx={{
+                                p: "20px"
+                            }}
+                        >
+                            <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Simon&nbsp;-&nbsp;<span>Chichester, PA</span></Typography>
+                            <Typography color="#fff">"I would recommend these guys to anyone looking to conduct home renovations. Our carpenter showed up on time ready to work and left the work site clean at the end of each day."</Typography>
+                        </Stack>
+                    </Paper>
+                </Box>
+            </Stack>
         </Box>
     );
 }

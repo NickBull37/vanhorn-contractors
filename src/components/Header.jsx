@@ -24,7 +24,7 @@ const Header = () => {
     return (
         <Box id="header">
             <nav>
-                <a href="/">
+                <Link to="/#">
                     <Box
                         display="flex" 
                         alignItems="center"
@@ -39,7 +39,7 @@ const Header = () => {
                             Van Horn&nbsp;Contractors
                         </Typography>
                     </Box>
-                </a>
+                </Link>
                 <ul id="sidemenu">
                     <li>
                         <Link to="/services">Services</Link>

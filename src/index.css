@@ -140,7 +140,7 @@ nav .fa-solid {
 }
 
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/workbench-hero-test.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("images/workbench-hero-test.jpg");
     /* background-image: url(images/hero-img2.jpg); */
 
     /* width: 100vw; */
@@ -162,10 +162,10 @@ nav .fa-solid {
 .testimonials div span {
     text-transform: uppercase;
     font-size: 1rem;
-    background-color: #d4d4d8;
+    /* background-color: #d4d4d8;
     color: #52525b;
     padding: 4px;
-    border-radius: 5px;
+    border-radius: 5px; */
 }
 
 
@@ -173,7 +173,14 @@ nav .fa-solid {
 /********************************************************************************************************************************************
 ************************************************************ 6. SERVICES PAGE ***************************************************************
 ********************************************************************************************************************************************/
+#services-page {
+    background: #3e3e41;
+}
 
+.service-image {
+    max-height: 200px;
+    max-width: 300px;
+}
 
 
 

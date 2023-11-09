@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Typography, Grid } from '@mui/material';
+import { Box, Stack, Typography, Grid, Paper } from '@mui/material';
 
 const AboutPage = () => {
     return (
@@ -8,32 +8,34 @@ const AboutPage = () => {
             py={{ xs: 4, md: 8 }}
             px={{ xs: 4, md: 24 }}
             sx={{
-                width: '100%'
+                width: '100%',
+                backgroundColor: "#3e3e41"
             }}
         >
-            <Grid container rowSpacing={8} columnSpacing={{ xs: 1, md: 24 }}>
+            <Grid container rowSpacing={8} columnSpacing={{ xs: 1, md: 24 }} mb={4}>
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography variant="h3" sx={{ mb: 1 }}>About</Typography>
-                        <Box
+                        <Paper
+                            elevation={12}
                             p={2}
                             sx={{
                                 backgroundColor: "#71717a",
-                                borderRadius: "10px"
+                                // borderRadius: "10px"
                             }}
                         >
-                            <Typography>VanHorn Contractors LLC is a family owned and operated business that provides carpentry, painting, and deck services to Delaware and Chester County, PA, and surrounding areas.</Typography>
-                        </Box>
+                            <Typography p={2} color="#fff">VanHorn Contractors LLC is a family owned and operated business that provides carpentry, painting, and deck services to Delaware and Chester County, PA, and surrounding areas.</Typography>
+                        </Paper>
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography variant="h3" sx={{ mb: 1 }}>Hours</Typography>
-                        <Box
+                        <Paper
+                            elevation={12}
                             p={2}
                             sx={{
                                 backgroundColor: "#71717a",
-                                borderRadius: "10px"
                             }}
                         >
                             <Box
@@ -41,54 +43,56 @@ const AboutPage = () => {
                                 justifyContent="space-between"
                                 sx={{ mb: 1 }}
                             >
-                                <Typography>Monday - Friday</Typography><Typography>8:00AM - 5:00PM</Typography>
+                                <Typography p={2} color="#fff">Monday - Friday</Typography><Typography p={2} color="#fff">8:00AM - 5:00PM</Typography>
                             </Box>
                             <Box
                                 display="flex"
                                 justifyContent="space-between"
                                 sx={{ mb: 1 }}
                             >
-                                <Typography>Saturday - Sunday</Typography><Typography>Closed</Typography>
+                                <Typography px={2} color="#fff">Saturday - Sunday</Typography><Typography px={2} color="#fff">Closed</Typography>
                             </Box>
                             <Box
                                 display="flex"
                                 justifyContent="space-between"
                             >
-                                <Typography>Holidays</Typography><Typography>Closed</Typography>
+                                <Typography p={2} color="#fff">Holidays</Typography><Typography p={2} color="#fff">Closed</Typography>
                             </Box>
-                        </Box>
+                        </Paper>
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography variant="h3" sx={{ mb: 1 }}>Services</Typography>
-                        <Box
+                        <Paper
+                            elevation={12}
                             p={2}
                             sx={{
                                 backgroundColor: "#71717a",
                                 borderRadius: "10px"
                             }}
                         >
-                            <Typography sx={{ mb: 1 }}>- Custom Cabinets</Typography>
-                            <Typography sx={{ mb: 1 }}>- Custom Furniture</Typography>
-                            <Typography sx={{ mb: 1 }}>- Painting</Typography>
-                            <Typography>- Electrical Work</Typography>
-                        </Box>
+                            <Typography p={2} color="#fff" sx={{ mb: 1 }}>- Custom Cabinets</Typography>
+                            <Typography px={2} color="#fff" sx={{ mb: 1 }}>- Custom Furniture</Typography>
+                            <Typography p={2} color="#fff" sx={{ mb: 1 }}>- Painting</Typography>
+                            <Typography px={2} pb={2} color="#fff">- Electrical Work</Typography>
+                        </Paper>
                     </Stack>
                 </Grid>
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography variant="h3" sx={{ mb: 1 }}>Payment Options</Typography>
-                        <Box
+                        <Paper
+                            elevation={12}
                             p={2}
                             sx={{
                                 backgroundColor: "#71717a",
                                 borderRadius: "10px"
                             }}
                         >
-                            <Typography sx={{ mb: 1 }}>- Cash</Typography>
-                            <Typography>- Check</Typography>
-                        </Box>
+                            <Typography px={2} pt={2} color="#fff" sx={{ mb: 1 }}>- Cash</Typography>
+                            <Typography px={2} pb={2} color="#fff">- Check</Typography>
+                        </Paper>
                     </Stack>
                 </Grid>
             </Grid>

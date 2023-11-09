@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Box, Typography } from '@mui/material';
 
 const Footer = () => {
@@ -13,21 +14,31 @@ const Footer = () => {
             p={{ xs: 4, md: 6 }}
         >
             <Typography variant="body2">COPYRIGHT <span>©</span> 2023</Typography>
-            <a href="/">
-                <Typography variant="body2">VanHorn Contractors LLC.</Typography>
-            </a>
-            <a href="/#/services">
-                <Typography variant="body2">Services</Typography>
-            </a>
-            <a href="/#/gallery">
-                <Typography variant="body2">Gallery</Typography>
-            </a>
-            <a href="/#/contact">
-                <Typography variant="body2">Contact</Typography>
-            </a>
-            <a href="/#/about">
-                <Typography variant="body2">About</Typography>
-            </a>
+            <Typography variant="body2">
+                <Link to="/#">
+                    Van Horn Contractors LLC.
+                </Link>
+            </Typography>
+            <Typography variant="body2">
+                <Link to="/services">
+                    Services
+                </Link>
+            </Typography>
+            <Typography variant="body2">
+                <Link to="/gallery">
+                    Gallery
+                </Link>
+            </Typography>
+            <Typography variant="body2">
+                <Link to="/contact">
+                    Contact
+                </Link>
+            </Typography>
+            <Typography variant="body2">
+                <Link to="/about">
+                    About
+                </Link>
+            </Typography>
         </Box>
     );
 }
