@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Stack, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const Footer = () => {
     return (
@@ -16,16 +16,16 @@ const Footer = () => {
             <a href="/">
                 <Typography variant="body2">VanHorn Contractors LLC.</Typography>
             </a>
-            <a href="/services">
+            <a href="/#/services">
                 <Typography variant="body2">Services</Typography>
             </a>
-            <a href="/gallery">
+            <a href="/#/gallery">
                 <Typography variant="body2">Gallery</Typography>
             </a>
-            <a href="/contact">
+            <a href="/#/contact">
                 <Typography variant="body2">Contact</Typography>
             </a>
-            <a href="/about">
+            <a href="/#/about">
                 <Typography variant="body2">About</Typography>
             </a>
         </Box>

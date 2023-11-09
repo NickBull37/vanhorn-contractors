@@ -1,104 +1,98 @@
 import React from 'react';
-import { Box, Stack, Typography, Button } from '@mui/material';
+import { Box, Stack, Typography, Grid } from '@mui/material';
 
 const AboutPage = () => {
     return (
-        <Stack
-            gap={8}
-            px={"10%"}
-            py={8}
+
+        <Box
+            py={{ xs: 4, md: 8 }}
+            px={{ xs: 4, md: 24 }}
+            sx={{
+                width: '100%'
+            }}
         >
-            <Box
-                display="flex"
-                justifyContent="space-between"
-            >
-                <Box width="40%">
-                    <Typography variant="h3">About</Typography>
-                    <Box
-                        mt={1}
-                        py={3}
-                        px={4}
-                        sx={{
-                            backgroundColor: "#71717a",
-                            borderRadius: "10px"
-                        }}
-                    >
-                        <Typography>VanHorn Contractors LLC is a family owned and operated business that provides carpentry, painting, and deck services to Delaware and Chester County, PA, and surrounding areas.</Typography>
-                    </Box>
-                </Box>
-                <Box width="40%">
-                    <Typography variant="h3">Hours</Typography>
-                    <Box
-                        mt={1}
-                        py={2}
-                        px={4}
-                        sx={{
-                            backgroundColor: "#71717a",
-                            borderRadius: "10px"
-                        }}
-                    >
+            <Grid container rowSpacing={8} columnSpacing={{ xs: 1, md: 24 }}>
+                <Grid item xs={12} md={6}>
+                    <Stack>
+                        <Typography variant="h3" sx={{ mb: 1 }}>About</Typography>
                         <Box
-                            py={1}
-                            display="flex"
-                            justifyContent="space-between"
+                            p={2}
+                            sx={{
+                                backgroundColor: "#71717a",
+                                borderRadius: "10px"
+                            }}
                         >
-                            <Typography>Monday - Friday</Typography><Typography>8:00AM - 5:00PM</Typography>
+                            <Typography>VanHorn Contractors LLC is a family owned and operated business that provides carpentry, painting, and deck services to Delaware and Chester County, PA, and surrounding areas.</Typography>
                         </Box>
+                    </Stack>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Stack>
+                        <Typography variant="h3" sx={{ mb: 1 }}>Hours</Typography>
                         <Box
-                            py={1}
-                            display="flex"
-                            justifyContent="space-between"
+                            p={2}
+                            sx={{
+                                backgroundColor: "#71717a",
+                                borderRadius: "10px"
+                            }}
                         >
-                            <Typography>Saturday - Sunday</Typography><Typography>Closed</Typography>
+                            <Box
+                                display="flex"
+                                justifyContent="space-between"
+                                sx={{ mb: 1 }}
+                            >
+                                <Typography>Monday - Friday</Typography><Typography>8:00AM - 5:00PM</Typography>
+                            </Box>
+                            <Box
+                                display="flex"
+                                justifyContent="space-between"
+                                sx={{ mb: 1 }}
+                            >
+                                <Typography>Saturday - Sunday</Typography><Typography>Closed</Typography>
+                            </Box>
+                            <Box
+                                display="flex"
+                                justifyContent="space-between"
+                            >
+                                <Typography>Holidays</Typography><Typography>Closed</Typography>
+                            </Box>
                         </Box>
+                    </Stack>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Stack>
+                        <Typography variant="h3" sx={{ mb: 1 }}>Services</Typography>
                         <Box
-                            py={1}
-                            display="flex"
-                            justifyContent="space-between"
+                            p={2}
+                            sx={{
+                                backgroundColor: "#71717a",
+                                borderRadius: "10px"
+                            }}
                         >
-                            <Typography>Holidays</Typography><Typography>Closed</Typography>
+                            <Typography sx={{ mb: 1 }}>- Custom Cabinets</Typography>
+                            <Typography sx={{ mb: 1 }}>- Custom Furniture</Typography>
+                            <Typography sx={{ mb: 1 }}>- Painting</Typography>
+                            <Typography>- Electrical Work</Typography>
                         </Box>
-                    </Box>
-                </Box>
-            </Box>
-            <Box
-                display="flex"
-                justifyContent="space-between"
-            >
-                <Box width="40%">
-                    <Typography variant="h3">Services</Typography>
-                    <Box
-                        mt={1}
-                        py={3}
-                        px={4}
-                        sx={{
-                            backgroundColor: "#71717a",
-                            borderRadius: "10px"
-                        }}
-                    >
-                        <Typography>- Custom Cabinets</Typography>
-                        <Typography>- Custom Furniture</Typography>
-                        <Typography>- Painting</Typography>
-                        <Typography>- Electrical Work</Typography>
-                    </Box>
-                </Box>
-                <Box minWidth="40%">
-                    <Typography variant="h3">Payment Options</Typography>
-                    <Box
-                        mt={1}
-                        py={3}
-                        px={4}
-                        sx={{
-                            backgroundColor: "#71717a",
-                            borderRadius: "10px"
-                        }}
-                    >
-                        <Typography>Cash</Typography>
-                        <Typography>Check</Typography>
-                    </Box>
-                </Box>
-            </Box>
-        </Stack>
+                    </Stack>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <Stack>
+                        <Typography variant="h3" sx={{ mb: 1 }}>Payment Options</Typography>
+                        <Box
+                            p={2}
+                            sx={{
+                                backgroundColor: "#71717a",
+                                borderRadius: "10px"
+                            }}
+                        >
+                            <Typography sx={{ mb: 1 }}>- Cash</Typography>
+                            <Typography>- Check</Typography>
+                        </Box>
+                    </Stack>
+                </Grid>
+            </Grid>
+        </Box>
     );
 }
 

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Box, Typography } from '@mui/material';
 import { carpentry } from '../utils/constants';
 
@@ -33,20 +34,25 @@ const Header = () => {
                             sx={{
                                 fontSize: { xs: '1.375rem', md: '1.875rem' },
                                 fontWeight: '600',
-                                // mt: '15px',
-                                // py: '5px',
-                                // px: '20px',
                             }}
-                            >
-                            VanHorn Contractors
+                        >
+                            Van Horn&nbsp;Contractors
                         </Typography>
                     </Box>
                 </a>
                 <ul id="sidemenu">
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/about">About</a></li>
+                    <li>
+                        <Link to="/services">Services</Link>
+                    </li>
+                    <li>
+                        <Link to="/gallery">Gallery</Link>
+                    </li>
+                    <li>
+                        <Link to="/contact">Contact</Link>
+                    </li>
+                    <li>
+                        <Link to="/about">About</Link>
+                    </li>
                     <i className="fa-solid fa-xmark" onClick={() => toggleMenu()}></i>
                 </ul>
                 <i className="fa-solid fa-bars" onClick={() => toggleMenu()}></i>

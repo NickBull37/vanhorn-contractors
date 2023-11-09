@@ -1,16 +1,7 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Box, Stack, Typography, Button } from '@mui/material';
 import { cabinet, paint, furniture } from '../utils/constants';
-
-const theme = createTheme({
-    palette: {
-        primary: {
-            main: '#72463B',
-          },
-    },
-});
 
 const BrownButton = styled(Button)(() => ({
     '&:hover': {
@@ -19,8 +10,6 @@ const BrownButton = styled(Button)(() => ({
 }));
 
 const HomePage = () => {
-
-    
 
     return (
         <Box id="homepage" mb={8}>
@@ -64,10 +53,10 @@ const HomePage = () => {
                         display="flex"
                         gap={12}
                     >
-                        <BrownButton size="large" variant="contained" href="/services" sx={{ backgroundColor: "#59372E" }}>
+                        <BrownButton size="large" variant="contained" href="/#/services" sx={{ backgroundColor: "#59372E" }}>
                             Services
                         </BrownButton>
-                        <BrownButton size="large" variant="contained" href="/gallery" sx={{ backgroundColor: "#59372E" }}>
+                        <BrownButton size="large" variant="contained" href="/#/gallery" sx={{ backgroundColor: "#59372E" }}>
                             Gallery
                         </BrownButton>
                     </Box>
