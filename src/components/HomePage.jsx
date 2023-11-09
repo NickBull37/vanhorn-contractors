@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
-import { Box, Stack, Typography, Button, Card, CardMedia, Paper } from '@mui/material';
+import { Box, Stack, Typography, Button, Card, CardMedia, Paper, Rating } from '@mui/material';
 import { cabinetService, paintingService, furnitureService, electricalService } from '../utils/constants';
 
 const BrownButton = styled(Button)(() => ({
@@ -197,49 +197,58 @@ const HomePage = () => {
                     <Paper elevation={8} sx={{ background: "#71717a" }}>
                         <Stack
                             width="300px"
+                            height="260px"
                             gap={2}
                             sx={{
                                 p: "20px"
                             }}
                             >
                             <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Chris&nbsp;-&nbsp;<span>Malvern, PA</span></Typography>
-                            <Typography color="#fff">"If you are looking for neat, experienced, and quality workmanship, Vanhorn Contractors provides it at every level! Their work is exceptional and first class."</Typography>
+                            <Typography flexGrow={1} color="#fff">"If you are looking for neat, experienced, and quality workmanship, Vanhorn Contractors provides it at every level! Their work is exceptional and first class."</Typography>
+                            <Rating defaultValue={5} precision={0.5} readOnly />
                         </Stack>
                     </Paper>
                     <Paper elevation={8} sx={{ background: "#71717a" }}>
                         <Stack
                             width="300px"
+                            height="260px"
                             gap={2}
                             sx={{
                                 p: "20px"
                             }}
                             >
                             <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Matt&nbsp;-&nbsp;<span>Glen Mills, PA</span></Typography>
-                            <Typography color="#fff">"Most recently they installed 2 replacement interior doors. This was on short notice too. Good guys who care about their work and it shows!!"</Typography>
+                            <Typography flexGrow={1} color="#fff">"Most recently they installed 2 replacement interior doors. This was on short notice too. Good guys who care about their work and it shows!!"</Typography>
+                            <Rating defaultValue={4} precision={0.5} readOnly />
                         </Stack>
                     </Paper>
                     <Paper elevation={8} sx={{ background: "#71717a" }}>
                         <Stack
                             width="300px"
+                            height="260px"
+                            justifyContent="space-between"
                             gap={2}
                             sx={{
                                 p: "20px"
                             }}
                         >
                             <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Robert&nbsp;-&nbsp;<span>Concord, PA</span></Typography>
-                            <Typography color="#fff">"They were amazing form start to finish. I would recommend VanHorn Contractors to anyone!"</Typography>
+                            <Typography flexGrow={1} color="#fff">"They were amazing form start to finish. I would recommend VanHorn Contractors to anyone!"</Typography>
+                            <Rating defaultValue={4.5} precision={0.5} readOnly />
                         </Stack>
                     </Paper>
                     <Paper elevation={8} sx={{ background: "#71717a" }}>
                         <Stack
                             width="300px"
+                            height="260px"
                             gap={2}
                             sx={{
                                 p: "20px"
                             }}
                         >
                             <Typography color="#fff" sx={{ fontSize: "1.25rem" }}>Simon&nbsp;-&nbsp;<span>Chichester, PA</span></Typography>
-                            <Typography color="#fff">"I would recommend these guys to anyone looking to conduct home renovations. Our carpenter showed up on time ready to work and left the work site clean at the end of each day."</Typography>
+                            <Typography flexGrow={1} color="#fff">"I would recommend these guys to anyone looking to conduct home renovations. Our carpenter showed up on time ready to work and left the work site clean at the end of each day."</Typography>
+                            <Rating defaultValue={5} precision={0.5} readOnly />
                         </Stack>
                     </Paper>
                 </Box>
