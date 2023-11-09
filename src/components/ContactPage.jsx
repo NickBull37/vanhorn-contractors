@@ -79,9 +79,11 @@ const ContactPage = () => {
                             </Box>
                         </Box>
                         <Box p={4}>
-                            <BrownButton href="/#/contact-form" variant="contained" sx={{ backgroundColor: "#76493d" }}>
-                                Contact Me
-                            </BrownButton>
+                            <Link to="/contact-form">
+                                <BrownButton variant="contained" sx={{ backgroundColor: "#76493d" }}>
+                                    Contact Me
+                                </BrownButton>
+                            </Link>
                         </Box>
                     </Box>
                 </Stack>

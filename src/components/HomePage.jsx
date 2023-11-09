@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography, Button, Card, CardMedia, Paper } from '@mui/material';
-import { cabinet, paint, furniture } from '../utils/constants';
 import { cabinetService, paintingService, furnitureService, electricalService } from '../utils/constants';
 
 const BrownButton = styled(Button)(() => ({
@@ -54,12 +54,16 @@ const HomePage = () => {
                         display="flex"
                         gap={12}
                     >
-                        <BrownButton size="large" variant="contained" href="/#/services" sx={{ backgroundColor: "#59372E" }}>
-                            Services
-                        </BrownButton>
-                        <BrownButton size="large" variant="contained" href="/#/gallery" sx={{ backgroundColor: "#59372E" }}>
-                            Gallery
-                        </BrownButton>
+                        <Link to="/services">
+                            <BrownButton size="large" variant="contained" sx={{ backgroundColor: "#59372E" }}>
+                                Services
+                            </BrownButton>
+                        </Link>
+                        <Link to="/gallery">
+                            <BrownButton size="large" variant="contained" sx={{ backgroundColor: "#59372E" }}>
+                                Gallery
+                            </BrownButton>
+                        </Link>
                     </Box>
                 </Box>
             </Box>
