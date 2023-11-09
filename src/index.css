@@ -188,14 +188,14 @@ nav .fa-solid {
 ************************************************************* 7. CONTACT PAGE ***************************************************************
 ********************************************************************************************************************************************/
 #contact-form {
-    padding: 100px 20%;
+    padding: 40px 20% 50px;
 }
 
 form input, form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #71717a;
+    background: #fff;
     padding: 15px;
     margin: 15px 0;
     color: #000;
@@ -204,11 +204,11 @@ form input, form textarea {
 }
 
 form input::placeholder {
-    color: #d4d4d8;
+    color: #afafb6;
 }
 
 form textarea::placeholder {
-    color: #d4d4d8;
+    color: #afafb6;
 }
 
 .social-links {
@@ -282,5 +282,9 @@ form textarea::placeholder {
         top: 25px;
         left: 25px;
         cursor: pointer;
+    }
+
+    #contact-form {
+        padding: 40px 8px 50px;
     }
 }

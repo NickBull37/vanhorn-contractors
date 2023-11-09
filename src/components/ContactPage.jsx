@@ -1,7 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Box, Stack, Typography, Paper } from '@mui/material';
+import { styled } from '@mui/material/styles';
+import { Box, Stack, Typography, Paper, Button } from '@mui/material';
 import { paperPlaneIcon, phoneIcon, facebookIcon } from '../utils/constants';
+
+const BrownButton = styled(Button)(() => ({
+    '&:hover': {
+        backgroundColor: '#C38F5F',
+    },
+}));
 
 const ContactPage = () => {
     return (
@@ -23,7 +30,6 @@ const ContactPage = () => {
             <Paper elevation={12} sx={{ backgroundColor: "#71717a" }}>
                 <Stack
                     gap={1}
-                    // p={3}
                 >
                     <Box
                         display="flex"
@@ -43,25 +49,40 @@ const ContactPage = () => {
                     </Box>
                     <Box
                         display="flex"
-                        alignItems="center"
-                        pl={3}
-                        pt={2}
+                        flexDirection={{ xs: "column", md: "row" }}
+                        justifyContent="space-between"
+                        alignItems={{ xs: "flex-start", md: "center" }}
                     >
-                        <Box sx={{ color: "#C38F5F", mr: 2 }}>{paperPlaneIcon}</Box>
-                        <Typography variant="h6" color="#fff">
-                            vhcontractors@gmail.com
-                        </Typography>
-                    </Box>
-                    <Box
-                        display="flex"
-                        alignItems="center"
-                        pl={3}
-                        pb={2}
-                    >
-                        <Box sx={{ color: "#C38F5F", mr: 2 }}>{phoneIcon}</Box>
-                        <Typography variant="h6" color="#fff">
-                            (610)-787-2935
-                        </Typography>
+                        <Box display="flex" flexDirection="column">
+                            <Box
+                                display="flex"
+                                alignItems="center"
+                                pl={3}
+                                pt={2}
+                            >
+                                <Box sx={{ color: "#C38F5F", mr: 2 }}>{paperPlaneIcon}</Box>
+                                <Typography variant="h6" color="#fff">
+                                    vhcontractors@gmail.com
+                                </Typography>
+                            </Box>
+                            <Box
+                                display="flex"
+                                alignItems="center"
+                                pt={2}
+                                pl={3}
+                                pb={2}
+                            >
+                                <Box sx={{ color: "#C38F5F", mr: 2 }}>{phoneIcon}</Box>
+                                <Typography variant="h6" color="#fff">
+                                    (610)-787-2935
+                                </Typography>
+                            </Box>
+                        </Box>
+                        <Box p={4}>
+                            <BrownButton href="/#/contact-form" variant="contained" sx={{ backgroundColor: "#76493d" }}>
+                                Contact Me
+                            </BrownButton>
+                        </Box>
                     </Box>
                 </Stack>
             </Paper>
