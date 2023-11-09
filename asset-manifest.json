@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vanhorn-contractors/static/css/main.b20e38dd.css",
-    "main.js": "/vanhorn-contractors/static/js/main.465518b3.js",
+    "main.css": "/vanhorn-contractors/static/css/main.a13c8bca.css",
+    "main.js": "/vanhorn-contractors/static/js/main.2fe90cb2.js",
     "static/media/workbench-hero-test.jpg": "/vanhorn-contractors/static/media/workbench-hero-test.b74ffcc39da2143f0b08.jpg",
     "static/media/carpentry.png": "/vanhorn-contractors/static/media/carpentry.103215e14db629326df1.png",
     "static/media/furniture-service.jpg": "/vanhorn-contractors/static/media/furniture-service.75037ac884b3c076a628.jpg",
@@ -10,11 +10,11 @@
     "static/media/painting-service.jpg": "/vanhorn-contractors/static/media/painting-service.d47ff886623a1ad1a89f.jpg",
     "static/media/placeholder.jpg": "/vanhorn-contractors/static/media/placeholder.e83e00e04a871eaf1317.jpg",
     "index.html": "/vanhorn-contractors/index.html",
-    "main.b20e38dd.css.map": "/vanhorn-contractors/static/css/main.b20e38dd.css.map",
-    "main.465518b3.js.map": "/vanhorn-contractors/static/js/main.465518b3.js.map"
+    "main.a13c8bca.css.map": "/vanhorn-contractors/static/css/main.a13c8bca.css.map",
+    "main.2fe90cb2.js.map": "/vanhorn-contractors/static/js/main.2fe90cb2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b20e38dd.css",
-    "static/js/main.465518b3.js"
+    "static/css/main.a13c8bca.css",
+    "static/js/main.2fe90cb2.js"
   ]
 }
