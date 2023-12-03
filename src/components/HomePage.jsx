@@ -24,13 +24,14 @@ const HomePage = () => {
                     sx={{ pt: "150px" }}
                 >
                     <Typography
+                        className="engine-spaced"
                         variant="h3"
-                        pb={1}
+                        pb={2}
                         sx={{
-                            fontSize: {xs: "2rem", md: "3rem"}
+                            fontSize: {xs: "2rem", md: "3.25rem"}
                         }}
                     >
-                        Expert Contractor Services
+                        <span className="heading-cap">E</span>xpert <span className="heading-cap">C</span>ontractor <span className="heading-cap">S</span>ervices
                     </Typography>
                     <Typography
                         variant="h5"
@@ -76,7 +77,7 @@ const HomePage = () => {
                     justifyContent="center"
                     mb={{ xs: 10, md: 6 }}
                 >
-                    <Typography variant="h2">
+                    <Typography variant="h2" className="engine-spaced">
                         Services
                     </Typography>
                 </Box>
@@ -87,90 +88,130 @@ const HomePage = () => {
                     alignItems={{ xs: "center", md: "inherit" }}
                     gap={{ xs: 12, md: 0 }}
                 >
-                    <Stack alignItems="center">
-                        <Card
-                            elevation={12}
-                            raised={true}
-                            sx={{
-                                maxWidth: { xs: "300px", md: "225px" },
-                                minWidth: { xs: "300px", md: "225px" },
-                            }}
-                        >
-                            <CardMedia
+                    <Link to="/services#cabinetry">
+                        <Stack alignItems="center">
+                            <Card
+                                elevation={12}
+                                raised={true}
                                 sx={{
-                                    height: {xs: 200, md: 150 }
+                                    maxWidth: { xs: "300px", md: "225px" },
+                                    minWidth: { xs: "300px", md: "225px" },
                                 }}
-                                image={cabinetService}
-                                title="green iguana"
                             >
+                                <CardMedia
+                                    sx={{
+                                        height: {xs: 200, md: 150 }
+                                    }}
+                                    image={cabinetService}
+                                    title="green iguana"
+                                >
 
-                            </CardMedia>
-                        </Card>
-                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Custom Cabinets</Typography>
-                    </Stack>
-                    <Stack alignItems="center">
-                        <Card
-                            elevation={12}
-                            raised={true}
-                            sx={{
-                                maxWidth: { xs: "300px", md: "225px" },
-                                minWidth: { xs: "300px", md: "225px" },
-                            }}
-                        >
-                            <CardMedia
+                                </CardMedia>
+                            </Card>
+                            <Typography
                                 sx={{
-                                    height: {xs: 200, md: 150 }
+                                    color: "#fff",
+                                    fontSize: "2rem",
+                                    mt: 2
                                 }}
-                                image={paintingService}
-                                title="green iguana"
                             >
-
-                            </CardMedia>
-                        </Card>
-                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Painting</Typography>
-                    </Stack>
-                    <Stack alignItems="center">
-                        <Card
-                            elevation={12}
-                            raised={true}
-                            sx={{
-                                maxWidth: { xs: "300px", md: "225px" },
-                                minWidth: { xs: "300px", md: "225px" },
-                            }}
-                        >
-                            <CardMedia
+                                Cabinetry & Trim
+                            </Typography>
+                        </Stack>
+                    </Link>
+                    <Link to="/services#electrical">
+                        <Stack alignItems="center">
+                            <Card
+                                elevation={12}
+                                raised={true}
                                 sx={{
-                                    height: {xs: 200, md: 150 }
+                                    maxWidth: { xs: "300px", md: "225px" },
+                                    minWidth: { xs: "300px", md: "225px" },
                                 }}
-                                image={furnitureService}
-                                title="green iguana"
                             >
+                                <CardMedia
+                                    sx={{
+                                        height: {xs: 200, md: 150 }
+                                    }}
+                                    image={electricalService}
+                                    title="green iguana"
+                                >
 
-                            </CardMedia>
-                        </Card>
-                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Custom Furniture</Typography>
-                    </Stack>
-                    <Stack alignItems="center">
-                        <Card
-                            elevation={12}
-                            raised={true}
-                            sx={{
-                                maxWidth: { xs: "300px", md: "225px" },
-                                minWidth: { xs: "300px", md: "225px" },
-                            }}
-                        >
-                            <CardMedia
+                                </CardMedia>
+                            </Card>
+                            <Typography
                                 sx={{
-                                    height: {xs: 200, md: 150 }
+                                    color: "#fff",
+                                    fontSize: "2rem",
+                                    mt: 2
                                 }}
-                                image={electricalService}
-                                title="green iguana"
                             >
+                                Electrical
+                            </Typography>
+                        </Stack>
+                    </Link>
+                    <Link to="/services#plumbing">
+                        <Stack alignItems="center">
+                            <Card
+                                elevation={12}
+                                raised={true}
+                                sx={{
+                                    maxWidth: { xs: "300px", md: "225px" },
+                                    minWidth: { xs: "300px", md: "225px" },
+                                }}
+                            >
+                                <CardMedia
+                                    sx={{
+                                        height: {xs: 200, md: 150 }
+                                    }}
+                                    image={furnitureService}
+                                    title="green iguana"
+                                >
 
-                            </CardMedia>
-                        </Card>
-                        <Typography sx={{ fontSize: "2rem", mt: 2 }}>Electrical Work</Typography>
-                    </Stack>
+                                </CardMedia>
+                            </Card>
+                            <Typography
+                                sx={{
+                                    color: "#fff",
+                                    fontSize: "2rem",
+                                    mt: 2
+                                }}
+                            >
+                                Plumbing
+                            </Typography>
+                        </Stack>
+                    </Link>
+                    <Link to="/services#painting">
+                        <Stack alignItems="center">
+                            <Card
+                                elevation={12}
+                                raised={true}
+                                sx={{
+                                    maxWidth: { xs: "300px", md: "225px" },
+                                    minWidth: { xs: "300px", md: "225px" },
+                                }}
+                            >
+                                <CardMedia
+                                    sx={{
+                                        height: {xs: 200, md: 150 }
+                                    }}
+                                    image={paintingService}
+                                    title="green iguana"
+                                >
+
+                                </CardMedia>
+                            </Card>
+                            <Typography
+                                sx={{
+                                    color: "#fff",
+                                    fontSize: "2rem",
+                                    mt: 2
+                                }}
+                            >
+                                Painting
+                            </Typography>
+                        </Stack>
+                    </Link>
                 </Box>
             </Stack>
             <Stack
@@ -182,7 +223,7 @@ const HomePage = () => {
                     justifyContent="center"
                     mb={6}
                 >
-                    <Typography variant="h2">
+                    <Typography variant="h2" className="engine-spaced">
                         Testimonials
                     </Typography>
                 </Box>

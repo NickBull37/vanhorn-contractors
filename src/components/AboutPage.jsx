@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Stack, Typography, Grid, Paper } from '@mui/material';
+import { moneyIcon, checkIcon } from '../utils/constants';
 
 const AboutPage = () => {
     return (
@@ -31,7 +32,7 @@ const AboutPage = () => {
                                 backgroundColor: "#71717a",
                             }}
                         >
-                            <Typography p={2} color="#fff">VanHorn Contractors LLC is a family owned and operated business that provides carpentry, painting, and deck services to Delaware and Chester County, PA, and surrounding areas.</Typography>
+                            <Typography p={2} color="#fff">Van Horn Contractors LLC is a family owned and operated business that has been providing quality services to Delaware and South Chester counties and surrounding areas since 1975.</Typography>
                         </Paper>
                     </Stack>
                 </Grid>
@@ -56,22 +57,31 @@ const AboutPage = () => {
                             <Box
                                 display="flex"
                                 justifyContent="space-between"
-                                sx={{ mb: 1 }}
+                                // sx={{ mb: 0.5 }}
                             >
-                                <Typography p={2} color="#fff">Monday - Friday</Typography><Typography p={2} color="#fff">8:00AM - 5:00PM</Typography>
-                            </Box>
-                            <Box
-                                display="flex"
-                                justifyContent="space-between"
-                                sx={{ mb: 1 }}
-                            >
-                                <Typography px={2} color="#fff">Saturday - Sunday</Typography><Typography px={2} color="#fff">Closed</Typography>
+                                <Typography pt={2} px={2} pb={1} color="#fff">Monday - Friday</Typography>
+                                <Typography pt={2} px={2} pb={1} color="#fff">8:00AM - 5:00PM</Typography>
                             </Box>
                             <Box
                                 display="flex"
                                 justifyContent="space-between"
                             >
-                                <Typography p={2} color="#fff">Holidays</Typography><Typography p={2} color="#fff">Closed</Typography>
+                                <Typography px={2} pb={1} color="#fff">Saturday - Sunday</Typography>
+                                <Typography px={2} pb={1} color="#fff">Closed</Typography>
+                            </Box>
+                            <Box
+                                display="flex"
+                                justifyContent="space-between"
+                            >
+                                <Typography px={2} pb={1} color="#fff">Holidays</Typography>
+                                <Typography px={2} pb={1} color="#fff">Closed</Typography>
+                            </Box>
+                            <Box
+                                display="flex"
+                                justifyContent="space-between"
+                            >
+                                <Typography px={2} pb={2} color="#fff">Emergencies</Typography>
+                                <Typography px={2} pb={2} color="#fff">Anytime (day or night)</Typography>
                             </Box>
                         </Paper>
                     </Stack>
@@ -95,10 +105,12 @@ const AboutPage = () => {
                                 borderRadius: "10px"
                             }}
                         >
-                            <Typography p={2} color="#fff" sx={{ mb: 1 }}>- Custom Cabinets</Typography>
-                            <Typography px={2} color="#fff" sx={{ mb: 1 }}>- Custom Furniture</Typography>
-                            <Typography p={2} color="#fff" sx={{ mb: 1 }}>- Painting</Typography>
-                            <Typography px={2} pb={2} color="#fff">- Electrical Work</Typography>
+                            <Typography px={2} pt={2} pb={1} color="#fff" sx={{ mb: 0.5 }}>- Custom Cabinetry (crafting & repair)</Typography>
+                            <Typography px={2} pb={1} color="#fff" sx={{ mb: 0.5 }}>- Kitchen Planning & Design</Typography>
+                            <Typography px={2} pb={1} color="#fff" sx={{ mb: 0.5 }}>- Painting (interior & exterior)</Typography>
+                            <Typography px={2} pb={1} color="#fff" sx={{ mb: 0.5 }}>- Drywall Services (hanging, finishing, & repairing)</Typography>
+                            <Typography px={2} pb={1} color="#fff">- Minor Household Electrical Work</Typography>
+                            <Typography px={2} pb={2} color="#fff">- Minor Household Plumbing Work</Typography>
                         </Paper>
                     </Stack>
                 </Grid>
@@ -121,8 +133,39 @@ const AboutPage = () => {
                                 borderRadius: "10px"
                             }}
                         >
-                            <Typography px={2} pt={2} color="#fff" sx={{ mb: 1 }}>- Cash</Typography>
-                            <Typography p={2} color="#fff">- Check</Typography>
+                            <Box
+                                pt={2}
+                                px={2}
+                                mb={2}
+                                display="flex"
+                                alignItems="center"
+                            >
+                                <Box sx={{ color: "#31aa49", mr: 2 }}>{moneyIcon}</Box>
+                                <Typography
+                                    color="#fff"
+                                    sx={{
+                                        fontSize: "1.125rem"
+                                    }}
+                                >
+                                    Cash
+                                </Typography>
+                            </Box>
+                            <Box
+                                pb={2}
+                                px={2}
+                                display="flex"
+                                alignItems="center"
+                            >
+                                <Box sx={{ color: "#e4e0cd", mr: 2 }}>{checkIcon}</Box>
+                                <Typography
+                                    color="#fff"
+                                    sx={{
+                                        fontSize: "1.125rem"
+                                    }}
+                                >
+                                    Check
+                                </Typography>
+                            </Box>
                         </Paper>
                     </Stack>
                 </Grid>

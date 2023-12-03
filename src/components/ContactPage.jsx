@@ -22,10 +22,11 @@ const ContactPage = () => {
             }}
         >
             <Typography
+                className="engine-spaced"
                 variant="h3"
                 mb={1}
             >
-                Contact
+                <span className="heading-cap">C</span>ontact
             </Typography>
             <Paper elevation={12} sx={{ backgroundColor: "#71717a" }}>
                 <Stack
@@ -44,7 +45,7 @@ const ContactPage = () => {
                             variant="h5"
                             color="#fff"
                         >
-                            Chuck Van Horn
+                            Charles Van Horn
                         </Typography>
                     </Box>
                     <Box
@@ -62,7 +63,7 @@ const ContactPage = () => {
                             >
                                 <Box sx={{ color: "#C38F5F", mr: 2 }}>{paperPlaneIcon}</Box>
                                 <Typography variant="h6" color="#fff">
-                                    vhcontractors@gmail.com
+                                    woodworker629@gmail.com
                                 </Typography>
                             </Box>
                             <Box
@@ -90,11 +91,12 @@ const ContactPage = () => {
             </Paper>
                 <Stack mb={4} >
                     <Typography
+                        className="engine-spaced"
                         variant="h3"
                         mb={1}
                         mt={10}
                     >
-                        Social Media
+                        <span className="heading-cap">S</span>ocial <span className="heading-cap">M</span>edia
                     </Typography>
                     <Paper elevation={12} sx={{ backgroundColor: "#71717a" }}>
                         <Box

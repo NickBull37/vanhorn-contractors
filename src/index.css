@@ -6,11 +6,13 @@
         1.1 Colors - Palette
         1.2 Colors - Backgrounds
         1.3 Colors - Text
+        1.4 Shadows
 
     2. DEFAULT STYLES
 
     3. GENERIC STYLES
         3.1 Color
+        3.2 Typography
 
     4. HEADER
 
@@ -43,6 +45,10 @@
     /* ------------------- 1.3 Colors - Text  ------------------*/
     --text-gray: #ababab;
 
+
+    /* ------------------- 1.4 Shadows  ------------------*/
+    --shadow-8: 0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgba(0,0,0,0.14), 0px 3px 14px 2px rgba(0,0,0,0.12);
+    --shadow-24: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12);
 }
 
 /********************************************************************************************************************************************
@@ -68,14 +74,92 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: var(--light-wood);
+}
+
+@font-face {
+    font-family: 'Engine';
+    src: local('Engine'),
+         url('./fonts/Engine.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cornerstone';
+    src: local('Cornerstone'),
+         url('./fonts/Cornerstone.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Knucklehead';
+    src: local('Knucklehead'),
+         url('./fonts/Knucklehead.otf') format('opentype');
+}
+
 
 /********************************************************************************************************************************************
 ************************************************************ 3. GENERIC STYLES **************************************************************
 ********************************************************************************************************************************************/
 
 /* ------------------- 3.1 Color  ------------------*/
-.color-purple {
-    color: var(--purple);
+.color-red {
+    background-color: red;
+}
+
+.shadow-8 {
+    box-shadow: var(--shadow-8) !important;
+}
+
+.shadow-24 {
+    box-shadow: var(--shadow-24) !important;
+}
+
+/* ------------------- 3.2 Typography  ------------------*/
+
+.engine {
+    font-family: Engine !important;
+    letter-spacing: 4px !important;
+    line-height: 1.1 !important;
+}
+
+.engine-spaced {
+    font-family: Engine !important;
+    letter-spacing: 8px !important;
+    line-height: 1.1 !important;
+}
+
+.engine-spaced-small {
+    font-family: Engine !important;
+    letter-spacing: 8px !important;
+    line-height: 1.1 !important;
+    font-size: 1.75rem;
+}
+
+.title-cap {
+    font-family: Engine !important;
+    letter-spacing: 4px !important;
+    line-height: 1.1 !important;
+    font-size: 2.5rem;
+}
+
+.heading-cap {
+    font-family: Engine !important;
+    letter-spacing: 8px !important;
+    line-height: 1.1 !important;
+    font-size: 3.5rem;
+}
+
+.nav-cap {
+    font-family: Engine !important;
+    /* letter-spacing: 8px !important; */
+    line-height: 1.1 !important;
+    font-size: 1.375rem;
+}
+
+
+.text-2 {
+    font-size: 2.5rem;
 }
 
 
@@ -84,6 +168,18 @@ body {
 ********************************************************************************************************************************************/
 #header {
     padding: 20px 10%;
+}
+
+.cornerstone {
+    font-family: Cornerstone !important;
+    letter-spacing: 5px !important;
+    line-height: 1.1 !important;
+}
+
+.cornerstone-title {
+    font-family: Cornerstone !important;
+    /* letter-spacing: 3px !important; */
+    line-height: 1.1 !important;
 }
 
 nav {
@@ -176,6 +272,37 @@ nav .fa-solid {
 .service-image {
     max-height: 200px;
     max-width: 300px;
+}
+
+
+
+/********************************************************************************************************************************************
+************************************************************ 6. GALLERY PAGE ***************************************************************
+********************************************************************************************************************************************/
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-image-no-shadow {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.slider {
+    height: 450px;
+    width: 600px;
+}
+
+.slide {
+    padding: 20px;
+}
+
+.carousel-btn {
+    padding: 10px 20px;
+    
 }
 
 

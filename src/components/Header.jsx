@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Typography } from '@mui/material';
-import { carpentry } from '../utils/constants';
+import { Box, Typography, Paper } from '@mui/material';
+import { carpentry, carpentry2 } from '../utils/constants';
+import "../fonts/Cornerstone.ttf";
+import "../fonts/Knucklehead.otf";
 
 const Header = () => {
 
@@ -29,23 +31,25 @@ const Header = () => {
                         display="flex" 
                         alignItems="center"
                     >
-                        <img height="60px" src={carpentry} alt="" />
+                        <img height="40px" src={carpentry2} alt="" />
                         <Typography
+                            className="engine"
                             sx={{
-                                fontSize: { xs: '1.375rem', md: '1.875rem' },
-                                fontWeight: '600',
+                                fontSize: { xs: '1.375rem', md: '2rem' },
+                                color: "#fff",
+                                pl: 2
                             }}
                         >
-                            Van Horn&nbsp;Contractors
+                            <span className="title-cap">V</span>an <span className="title-cap">H</span>orn&nbsp;<span className="title-cap">C</span>ontractors
                         </Typography>
                     </Box>
                 </Link>
                 <ul id="sidemenu">
                     <li>
-                        <Link to="/services">Services</Link>
+                        <Link to="/services"><span className="engine"><span className="nav-cap">S</span>ervices</span></Link>
                     </li>
                     <li>
-                        <Link to="/gallery">Gallery</Link>
+                        <Link to="/gallery"><span className="engine"><span className="nav-cap">G</span>allery</span></Link>
                     </li>
                     <li>
                         <Link to="/contact">Contact</Link>

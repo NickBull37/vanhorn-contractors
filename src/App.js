@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 import { Header, Footer } from './components';
 import { HomePage, AboutPage, ServicesPage, GalleryPage, ContactPage, ContactFormPage } from './components';
 
+
 const App = () => {
     return (
         <Box sx={{ backgroundColor: "#27272a" }}>
