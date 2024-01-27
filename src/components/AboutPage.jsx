@@ -17,6 +17,7 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
+                            className="progress-reg"
                             variant="h3"
                             sx={{
                                 mb: 1,
@@ -39,6 +40,7 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
+                            className="eros"
                             variant="h3"
                             sx={{
                                 mb: 1,
@@ -89,6 +91,7 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
+                            className="engine"
                             variant="h3"
                             sx={{
                                 mb: 1,
@@ -117,13 +120,14 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
+                            className="wordmean"
                             variant="h3"
                             sx={{
                                 mb: 1,
-                                fontSize: { xs: "2.125rem", md: "3rem" }
+                                fontSize: { xs: "2.125rem", md: "2.5rem" }
                             }}
                         >
-                            Payment Options
+                            PAYMENT OPTIONS
                         </Typography>
                         <Paper
                             elevation={12}

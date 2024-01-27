@@ -22,11 +22,11 @@ const ContactPage = () => {
             }}
         >
             <Typography
-                className="engine-spaced"
+                className="wordmean"
                 variant="h3"
                 mb={1}
             >
-                <span className="heading-cap">C</span>ontact
+                Contact
             </Typography>
             <Paper elevation={12} sx={{ backgroundColor: "#71717a" }}>
                 <Stack
@@ -91,12 +91,12 @@ const ContactPage = () => {
             </Paper>
                 <Stack mb={4} >
                     <Typography
-                        className="engine-spaced"
+                        className="wordmean"
                         variant="h3"
                         mb={1}
                         mt={10}
                     >
-                        <span className="heading-cap">S</span>ocial <span className="heading-cap">M</span>edia
+                        Social Media
                     </Typography>
                     <Paper elevation={12} sx={{ backgroundColor: "#71717a" }}>
                         <Box

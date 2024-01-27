@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography, Card, CardMedia } from '@mui/material';
-import { cabinetService, paintingService, furnitureService, electricalService } from '../utils/constants';
+import { cabinetService, paintingService, furnitureService, electricalService, plumbingService } from '../utils/constants';
 
 const ServicesPage = () => {
     return (
@@ -17,14 +17,14 @@ const ServicesPage = () => {
                 >
                     <Box>
                         <Typography
-                            className="engine-spaced"
+                            className="engine"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2.25rem", md: "2.875rem" }
+                                fontSize: { xs: "2rem", md: "2.875rem" }
                             }}
                         >
-                            <span className="heading-cap">C</span>abinetry & <span className="heading-cap">T</span>rim
+                            Cabinetry & Trim
                         </Typography>
                         <Card
                             elevation={12}
@@ -37,7 +37,7 @@ const ServicesPage = () => {
                             <CardMedia
                                 sx={{ height: 200 }}
                                 image={cabinetService}
-                                title="green iguana"
+                                title="cabinetry service"
                             >
 
                             </CardMedia>
@@ -45,7 +45,7 @@ const ServicesPage = () => {
                     </Box>
                     <Stack gap={2}>
                         <Typography sx={{ fontSize: "1.5rem" }}>
-                            We specialize in custom cabinetry. We can match build or match almost any style of cabinetry or trim. Let us help design your dream kitchen.
+                            With years of experience in the fields of designing and building custom cabinetry and millwork, we are able to build or match almost any style of cabinet or trim. Let us help design your dream kitchen.
                         </Typography>
                         <Stack
                             gap={1}
@@ -70,6 +70,9 @@ const ServicesPage = () => {
                                     <li>
                                         Repairing cabinet doors and drawers
                                     </li>
+                                    <li>
+                                        Cabinet installation
+                                    </li>
                                 </ul>
                             </Typography>
                         </Stack>
@@ -88,7 +91,7 @@ const ServicesPage = () => {
                 >
                     <Stack gap={2}>
                         <Typography sx={{ fontSize: "1.5rem" }}>
-                            We provide a variety of indoor & outdoor household electrical services. All services are GFI certified.
+                            We provide a variety of indoor & outdoor household electrical services from replacing a worn out light switch to installing new outlets and light fixtures.
                         </Typography>
                         <Stack
                             gap={1}
@@ -110,20 +113,23 @@ const ServicesPage = () => {
                                     <li>
                                         Installing light fixtures, outlets, switches, etc.
                                     </li>
+                                    <li>
+                                        Installing/replacing circuit breakers or fuses
+                                    </li>
                                 </ul>
                             </Typography>
                         </Stack>
                     </Stack>
                     <Box>
                         <Typography
-                            className="engine-spaced"
+                            className="progress-reg"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2.25rem", md: "2.875rem" }
+                                fontSize: { xs: "2rem", md: "2.4rem" }
                             }}
                         >
-                            <span className="heading-cap">E</span>lectrical <span className="engine-spaced-small">(minor)</span>
+                            Electrical&nbsp;&nbsp;<span className="progress-reg-small">(minor)</span>
                         </Typography>
                         <Card
                             elevation={12}
@@ -136,7 +142,7 @@ const ServicesPage = () => {
                             <CardMedia
                                 sx={{ height: 200 }}
                                 image={electricalService}
-                                title="green iguana"
+                                title="electrical service"
                             >
 
                             </CardMedia>
@@ -155,14 +161,14 @@ const ServicesPage = () => {
                 >
                     <Box>
                         <Typography
-                            className="engine-spaced"
+                            className="eros"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2.25rem", md: "2.875rem" }
+                                fontSize: { xs: "2rem", md: "2.5rem" }
                             }}
                         >
-                            <span className="heading-cap">P</span>lumbing  <span className="engine-spaced-small">(minor)</span>
+                            Plumbing&nbsp;&nbsp;<span className="eros-small"><span className="lift-bracket">[</span>minor<span className="lift-bracket">]</span></span>
                         </Typography>
                         <Card
                             elevation={12}
@@ -174,8 +180,8 @@ const ServicesPage = () => {
                         >
                             <CardMedia
                                 sx={{ height: 200 }}
-                                image={cabinetService}
-                                title="green iguana"
+                                image={plumbingService}
+                                title="plumbing service"
                             >
 
                             </CardMedia>
@@ -183,7 +189,7 @@ const ServicesPage = () => {
                     </Box>
                     <Stack gap={2}>
                         <Typography sx={{fontSize: "1.5rem" }}>
-                            We provide a variety of plumbing services. All plumbing services are some filler text cause this needs to be a little bit longer.
+                            We provide a variety of plumbing services with a specialty in repair & replacement of existing fixtures or pipes. 
                         </Typography>
                         <Stack
                             gap={1}
@@ -210,6 +216,9 @@ const ServicesPage = () => {
                                     </li>
                                     <li>
                                         Replacing garbage disposals
+                                    </li>
+                                    <li>
+                                        Installing new pipes
                                     </li>
                                 </ul>
                             </Typography>
@@ -254,26 +263,29 @@ const ServicesPage = () => {
                                     <li>
                                         Interior & exterior painting
                                     </li>
+                                    <li>
+                                        Providing recommendations & assistance for selecting paint colors, wood stains, & finishes.
+                                    </li>
                                 </ul>
                             </Typography>
                         </Stack>
                     </Stack>
                     <Box>
                         <Typography
-                            className="engine-spaced"
+                            className="wordmean"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2.25rem", md: "2.875rem" }
+                                fontSize: { xs: "2rem", md: "2.95rem" }
                             }}
                         >
-                            <span className="heading-cap">P</span>ainting
+                            PAINTING
                         </Typography>
                         <Card elevation={12} raised={true} sx={{ maxWidth: "300px", minWidth: "300px" }}>
                             <CardMedia
                                 sx={{ height: 200 }}
                                 image={paintingService}
-                                title="green iguana"
+                                title="painting service"
                             >
 
                             </CardMedia>
@@ -281,35 +293,70 @@ const ServicesPage = () => {
                     </Box>
                 </Box>
             </section>
-            <section id="refer">
-                <Box
-                    display="flex"
-                    alignItems="center"
-                    py={8}
-                    px={"20%"}
-                >
-                    <Stack gap={1}>
-                        <Typography
-                            className="engine"
-                            sx={{ fontSize: "1.625rem" }}
-                        >
-                            Didn't find the service you need?
-                        </Typography>
-                        <Box
-                            sx={{
-                                pt: 1,
-                                borderTop: "2px solid #BA8C63"
-                            }}
-                        >
-                            <Typography sx={{ fontSize: "1.25rem" }}>
-                                Give us a call and we will be happy to discuss your project with you. If it's not 
-                                something we can provide, we can refer you to someone who can. Visit our contact 
-                                page <Link to="/contact">here</Link>.
+            <Box
+                display="flex"
+                flexDirection={{ xs: "column", md: "row" }}
+                gap={{ xs: 0, md: 24 }}
+            >
+                <section id="refer">
+                    <Box
+                        display="flex"
+                        alignItems="center"
+                        py={8}
+                        pl={{ xs: "8%", md: "20%" }}
+                        pr={{ xs: "8%", md: 0 }}
+                    >
+                        <Stack gap={1}>
+                            <Typography
+                                className="wordmean ls3"
+                                sx={{ fontSize: "1.5rem" }}
+                            >
+                                Didn't find the service you need?
                             </Typography>
-                        </Box>
-                    </Stack>
-                </Box>
-            </section>
+                            <Box
+                                sx={{
+                                    pt: 1,
+                                    borderTop: "2px solid #BA8C63"
+                                }}
+                            >
+                                <Typography sx={{ fontSize: "1.25rem" }}>
+                                    Give us a call and we will be happy to discuss your project with you. If it's not 
+                                    something we can provide, we can refer you to someone who can. Visit our contact 
+                                    page <Link to="/contact">here</Link>.
+                                </Typography>
+                            </Box>
+                        </Stack>
+                    </Box>
+                </section>
+                <section id="any-size">
+                    <Box
+                        display="flex"
+                        alignItems="center"
+                        py={8}
+                        pr={{ xs: "8%", md: "20%" }}
+                        pl={{ xs: "8%", md: 0 }}
+                    >
+                        <Stack gap={1}>
+                            <Typography
+                                className="eros"
+                                sx={{ fontSize: "1.75rem" }}
+                            >
+                                Any job - Big or Small
+                            </Typography>
+                            <Box
+                                sx={{
+                                    pt: 1,
+                                    borderTop: "2px solid #BA8C63"
+                                }}
+                            >
+                                <Typography sx={{ fontSize: "1.25rem" }}>
+                                    We take on jobs of any size. Our projects range from full kitchen remodels to simple light fixture or door knob replacements. 
+                                </Typography>
+                            </Box>
+                        </Stack>
+                    </Box>
+                </section>
+            </Box>
         </Stack>
     );
 }

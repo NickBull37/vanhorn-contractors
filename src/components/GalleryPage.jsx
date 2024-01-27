@@ -6,6 +6,10 @@ import { Box, Stack, Typography, Button } from '@mui/material';
 import { cabinet1, cabinet2, cabinet3, cabinet4 } from '../utils/constants';
 import { bar1, bar2, bar3, bar4, bar5 } from '../utils/constants';
 import { house1, house2, house3, houseBefore1, houseBefore2 } from '../utils/constants';
+import { sunroom1, sunroom2, sunroom3, sunroom4 } from '../utils/constants';
+import { basementEntrace1, basementEntrace2 } from '../utils/constants';
+import { storage1, storage2 } from '../utils/constants';
+import { railing1, railing2 } from '../utils/constants';
 
 const TranslateButton = styled(Button)({
     background: "#57575b",
@@ -76,7 +80,33 @@ const GalleryPage = () => {
                 </Box>
             </Stack>
 
-            <Stack alignItems="center">
+            <Stack>
+                <Typography
+                    className="engine-spaced"
+                    variant="h3"
+                    mb={1}
+                    px={2}
+                >
+                    Custom Bar
+                </Typography>
+                <Box
+                    width="80vw"
+                    height="400px"
+                    display="flex"
+                    overflow="auto"
+                    gap={4}
+                    pb={4}
+                    px={2}
+                >
+                    <img className="gallery-image shadow-8" src={bar1} alt="" />
+                    <img className="gallery-image shadow-8" src={bar2} alt="" />
+                    <img className="gallery-image shadow-8" src={bar3} alt="" />
+                    <img className="gallery-image shadow-8" src={bar4} alt="" />
+                    <img className="gallery-image shadow-8" src={bar5} alt="" />
+                </Box>
+            </Stack>
+
+            {/* <Stack alignItems="center">
                 <Typography
                     className="engine-spaced"
                     variant="h3"
@@ -116,7 +146,7 @@ const GalleryPage = () => {
                         <ButtonNext className="carousel-btn shadow-8">Next</ButtonNext>
                     </Box>
                 </CarouselProvider>
-            </Stack>
+            </Stack> */}
 
             <Stack>
                 <Typography
@@ -141,6 +171,102 @@ const GalleryPage = () => {
                     <img className="gallery-image shadow-8" src={house2} alt="" />
                     <img className="gallery-image shadow-8" src={houseBefore2} alt="" />
                     <img className="gallery-image shadow-8" src={house3} alt="" />
+                </Box>
+            </Stack>
+
+            <Stack>
+                <Typography
+                    className="engine-spaced"
+                    variant="h3"
+                    mb={1}
+                    px={2}
+                >
+                Porch Renovation
+                </Typography>
+                <Box
+                    width="80vw"
+                    height="400px"
+                    display="flex"
+                    overflow="auto"
+                    gap={4}
+                    pb={4}
+                    px={2}
+                >
+                    <img className="gallery-image shadow-8" src={sunroom1} alt="" />
+                    <img className="gallery-image shadow-8" src={sunroom2} alt="" />
+                    <img className="gallery-image shadow-8" src={sunroom3} alt="" />
+                    <img className="gallery-image shadow-8" src={sunroom4} alt="" />
+                </Box>
+            </Stack>
+
+            <Stack>
+                <Typography
+                    className="engine-spaced"
+                    variant="h3"
+                    mb={4}
+                    px={2}
+                >
+                    Miscellaneous Projects
+                </Typography>
+                <Typography
+                    className="engine-spaced"
+                    variant="h4"
+                    mb={1}
+                    px={2}
+                >
+                    Custome Storage Solution
+                </Typography>
+                <Box
+                    width="80vw"
+                    height="400px"
+                    display="flex"
+                    overflow="auto"
+                    gap={4}
+                    mb={8}
+                    px={2}
+                >
+                    <img className="gallery-image shadow-8" src={storage1} alt="" />
+                    <img className="gallery-image shadow-8" src={storage2} alt="" />
+                </Box>
+                <Typography
+                    className="engine-spaced"
+                    variant="h4"
+                    mb={1}
+                    px={2}
+                >
+                    Basement Entrance
+                </Typography>
+                <Box
+                    width="80vw"
+                    height="400px"
+                    display="flex"
+                    overflow="auto"
+                    gap={4}
+                    mb={8}
+                    px={2}
+                >
+                    <img className="gallery-image shadow-8" src={basementEntrace1} alt="" />
+                    <img className="gallery-image shadow-8" src={basementEntrace2} alt="" />
+                </Box>
+                <Typography
+                    className="engine-spaced"
+                    variant="h4"
+                    mb={1}
+                    px={2}
+                >
+                    Custome Railing
+                </Typography>
+                <Box
+                    width="80vw"
+                    height="400px"
+                    display="flex"
+                    overflow="auto"
+                    gap={4}
+                    mb={8}
+                    px={2}
+                >
+                    <img className="gallery-image shadow-8" src={railing1} alt="" />
+                    <img className="gallery-image shadow-8" src={railing2} alt="" />
                 </Box>
             </Stack>
 

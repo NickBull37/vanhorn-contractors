@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography, Button, Card, CardMedia, Paper, Rating } from '@mui/material';
-import { cabinetService, paintingService, furnitureService, electricalService } from '../utils/constants';
+import { cabinetService, paintingService, furnitureService, electricalService, plumbingService } from '../utils/constants';
+import { brand2 } from '../utils/constants';
 
 const BrownButton = styled(Button)(() => ({
     '&:hover': {
@@ -21,23 +22,33 @@ const HomePage = () => {
                     display="flex"
                     flexDirection="column"
                     alignItems="center"
-                    sx={{ pt: "150px" }}
+                    sx={{ pt: "100px" }}
                 >
                     <Typography
-                        className="engine-spaced"
-                        variant="h3"
-                        pb={2}
+                        display={{ xs: "none", md: "block"}}
+                        pb={3}
                         sx={{
-                            fontSize: {xs: "2rem", md: "3.25rem"}
+                            fontSize: "3rem"
                         }}
                     >
-                        <span className="heading-cap">E</span>xpert <span className="heading-cap">C</span>ontractor <span className="heading-cap">S</span>ervices
+                        <span className="wordmean ls1">Expert Contractor Services</span>
+                    </Typography>
+                    <Typography
+                        className="wordmean ls1"
+                        display={{ xs: "block", md: "none"}}
+                        pb={3}
+                        sx={{
+                            textAlign: "center",
+                            fontSize: "2.25rem"
+                        }}
+                    >
+                        Expert Contractor<br />Services
                     </Typography>
                     <Typography
                         variant="h5"
                         pb={4}
                         sx={{
-                            fontSize: {xs: "1.25rem", md: "1.5rem"}
+                            fontSize: {xs: "1.25rem", md: "1.75rem"}
                         }}
                     >
                         Serving Delaware & Chester County PA
@@ -46,7 +57,7 @@ const HomePage = () => {
                         variant="h4"
                         mb={6}
                         sx={{
-                            fontSize: {xs: "1.75rem", md: "2.125rem"}
+                            fontSize: {xs: "1.75rem", md: "2.25rem"}
                         }}
                     >
                         (610)-787-2935
@@ -56,12 +67,12 @@ const HomePage = () => {
                         gap={12}
                     >
                         <Link to="/services">
-                            <BrownButton size="large" variant="contained" sx={{ backgroundColor: "#59372E" }}>
+                            <BrownButton className="shadow-24" size="large" variant="contained" sx={{ backgroundColor: "#59372E" }}>
                                 Services
                             </BrownButton>
                         </Link>
                         <Link to="/gallery">
-                            <BrownButton size="large" variant="contained" sx={{ backgroundColor: "#59372E" }}>
+                            <BrownButton className="shadow-24" size="large" variant="contained" sx={{ backgroundColor: "#59372E" }}>
                                 Gallery
                             </BrownButton>
                         </Link>
@@ -69,7 +80,7 @@ const HomePage = () => {
                 </Box>
             </Box>
             <Stack
-                py={8}
+                py={10}
                 sx={{ backgroundColor: "#3e3e41" }}
             >
                 <Box
@@ -77,7 +88,11 @@ const HomePage = () => {
                     justifyContent="center"
                     mb={{ xs: 10, md: 6 }}
                 >
-                    <Typography variant="h2" className="engine-spaced">
+                    <Typography className="wordmean"
+                        sx={{
+                            fontSize: {xs: "3rem", md: "3.75rem"}
+                        }}
+                    >
                         Services
                     </Typography>
                 </Box>
@@ -90,24 +105,26 @@ const HomePage = () => {
                 >
                     <Link to="/services#cabinetry">
                         <Stack alignItems="center">
-                            <Card
-                                elevation={12}
-                                raised={true}
-                                sx={{
-                                    maxWidth: { xs: "300px", md: "225px" },
-                                    minWidth: { xs: "300px", md: "225px" },
-                                }}
-                            >
-                                <CardMedia
+                            <Box className="hover-lift">
+                                <Card
+                                    elevation={12}
+                                    raised={true}
                                     sx={{
-                                        height: {xs: 200, md: 150 }
+                                        maxWidth: { xs: "300px", md: "225px" },
+                                        minWidth: { xs: "300px", md: "225px" },
                                     }}
-                                    image={cabinetService}
-                                    title="green iguana"
                                 >
+                                    <CardMedia
+                                        sx={{
+                                            height: {xs: 200, md: 150 }
+                                        }}
+                                        image={cabinetService}
+                                        title="green iguana"
+                                    >
 
-                                </CardMedia>
-                            </Card>
+                                    </CardMedia>
+                                </Card>
+                            </Box>
                             <Typography
                                 sx={{
                                     color: "#fff",
@@ -121,24 +138,26 @@ const HomePage = () => {
                     </Link>
                     <Link to="/services#electrical">
                         <Stack alignItems="center">
-                            <Card
-                                elevation={12}
-                                raised={true}
-                                sx={{
-                                    maxWidth: { xs: "300px", md: "225px" },
-                                    minWidth: { xs: "300px", md: "225px" },
-                                }}
-                            >
-                                <CardMedia
+                            <Box className="hover-lift">
+                                <Card
+                                    elevation={12}
+                                    raised={true}
                                     sx={{
-                                        height: {xs: 200, md: 150 }
+                                        maxWidth: { xs: "300px", md: "225px" },
+                                        minWidth: { xs: "300px", md: "225px" },
                                     }}
-                                    image={electricalService}
-                                    title="green iguana"
                                 >
+                                    <CardMedia
+                                        sx={{
+                                            height: {xs: 200, md: 150 }
+                                        }}
+                                        image={electricalService}
+                                        title="green iguana"
+                                    >
 
-                                </CardMedia>
-                            </Card>
+                                    </CardMedia>
+                                </Card>
+                            </Box>
                             <Typography
                                 sx={{
                                     color: "#fff",
@@ -152,24 +171,26 @@ const HomePage = () => {
                     </Link>
                     <Link to="/services#plumbing">
                         <Stack alignItems="center">
-                            <Card
-                                elevation={12}
-                                raised={true}
-                                sx={{
-                                    maxWidth: { xs: "300px", md: "225px" },
-                                    minWidth: { xs: "300px", md: "225px" },
-                                }}
-                            >
-                                <CardMedia
+                            <Box className="hover-lift">
+                                <Card
+                                    elevation={12}
+                                    raised={true}
                                     sx={{
-                                        height: {xs: 200, md: 150 }
+                                        maxWidth: { xs: "300px", md: "225px" },
+                                        minWidth: { xs: "300px", md: "225px" },
                                     }}
-                                    image={furnitureService}
-                                    title="green iguana"
                                 >
+                                    <CardMedia
+                                        sx={{
+                                            height: {xs: 200, md: 150 }
+                                        }}
+                                        image={plumbingService}
+                                        title="green iguana"
+                                    >
 
-                                </CardMedia>
-                            </Card>
+                                    </CardMedia>
+                                </Card>
+                            </Box>
                             <Typography
                                 sx={{
                                     color: "#fff",
@@ -183,24 +204,26 @@ const HomePage = () => {
                     </Link>
                     <Link to="/services#painting">
                         <Stack alignItems="center">
-                            <Card
-                                elevation={12}
-                                raised={true}
-                                sx={{
-                                    maxWidth: { xs: "300px", md: "225px" },
-                                    minWidth: { xs: "300px", md: "225px" },
-                                }}
-                            >
-                                <CardMedia
+                            <Box className="hover-lift">
+                                <Card
+                                    elevation={12}
+                                    raised={true}
                                     sx={{
-                                        height: {xs: 200, md: 150 }
+                                        maxWidth: { xs: "300px", md: "225px" },
+                                        minWidth: { xs: "300px", md: "225px" },
                                     }}
-                                    image={paintingService}
-                                    title="green iguana"
                                 >
+                                    <CardMedia
+                                        sx={{
+                                            height: {xs: 200, md: 150 }
+                                        }}
+                                        image={paintingService}
+                                        title="green iguana"
+                                    >
 
-                                </CardMedia>
-                            </Card>
+                                    </CardMedia>
+                                </Card>
+                            </Box>
                             <Typography
                                 sx={{
                                     color: "#fff",
@@ -223,7 +246,11 @@ const HomePage = () => {
                     justifyContent="center"
                     mb={6}
                 >
-                    <Typography variant="h2" className="engine-spaced">
+                    <Typography className="wordmean"
+                        sx={{
+                            fontSize: {xs: "3rem", md: "3.75rem"}
+                        }}
+                    >
                         Testimonials
                     </Typography>
                 </Box>
