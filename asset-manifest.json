@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/vanhorn-contractors/static/css/main.226f39b8.css",
-    "main.js": "/vanhorn-contractors/static/js/main.42b7e487.js",
+    "main.css": "/vanhorn-contractors/static/css/main.cb9d0786.css",
+    "main.js": "/vanhorn-contractors/static/js/main.b3e10ed4.js",
     "static/media/house1.jpeg": "/vanhorn-contractors/static/media/house1.a27a88a428ea6d97ec8a.jpeg",
     "static/media/house3.jpeg": "/vanhorn-contractors/static/media/house3.8c80363d6e89c7ce2aff.jpeg",
     "static/media/house-before1.jpeg": "/vanhorn-contractors/static/media/house-before1.8bb88f11297ef32cbba8.jpeg",
     "static/media/house-before2.jpeg": "/vanhorn-contractors/static/media/house-before2.01ed79c8b33be4d7ceb8.jpeg",
     "static/media/house2.jpeg": "/vanhorn-contractors/static/media/house2.931e52aa2cfeb5292f9c.jpeg",
     "static/media/workbench-hero-test.jpg": "/vanhorn-contractors/static/media/workbench-hero-test.b74ffcc39da2143f0b08.jpg",
+    "static/media/plumbing-service.jpg": "/vanhorn-contractors/static/media/plumbing-service.26f52b378bc124020c93.jpg",
     "static/media/carpentry.png": "/vanhorn-contractors/static/media/carpentry.103215e14db629326df1.png",
     "static/media/carpentry2.png": "/vanhorn-contractors/static/media/carpentry2.96fe00fd5351880e3d21.png",
     "static/media/furniture-service.jpg": "/vanhorn-contractors/static/media/furniture-service.75037ac884b3c076a628.jpg",
     "static/media/cabinet-service.jpg": "/vanhorn-contractors/static/media/cabinet-service.6fe4bc1408c1b462edc2.jpg",
     "static/media/electrical-service.jpg": "/vanhorn-contractors/static/media/electrical-service.8f05ae1af2513aedd29e.jpg",
     "static/media/painting-service.jpg": "/vanhorn-contractors/static/media/painting-service.d47ff886623a1ad1a89f.jpg",
-    "static/media/Knucklehead.otf": "/vanhorn-contractors/static/media/Knucklehead.02e57269953bd2886a0f.otf",
+    "static/media/Wordmean.ttf": "/vanhorn-contractors/static/media/Wordmean.8bcfab04f7f4f97dc0fd.ttf",
     "static/media/sunroom3.jpg": "/vanhorn-contractors/static/media/sunroom3.b348e95d4d221493e377.jpg",
     "static/media/sunroom1.jpg": "/vanhorn-contractors/static/media/sunroom1.b54c3d55de9e5faa2f43.jpg",
     "static/media/sunroom2.jpg": "/vanhorn-contractors/static/media/sunroom2.63bda42b54c6f53eba70.jpg",
@@ -34,17 +35,13 @@
     "static/media/cabinet4.jpg": "/vanhorn-contractors/static/media/cabinet4.5ce7bb7beae16c109ee3.jpg",
     "static/media/custom-storage2.jpg": "/vanhorn-contractors/static/media/custom-storage2.b56f6a1739059b068e54.jpg",
     "static/media/custom-storage1.jpg": "/vanhorn-contractors/static/media/custom-storage1.31e7da93124cbbed3823.jpg",
-    "static/media/brand-name2.png": "/vanhorn-contractors/static/media/brand-name2.14a13940743933ee9d1b.png",
-    "static/media/Cornerstone.ttf": "/vanhorn-contractors/static/media/Cornerstone.e28654e9c5349d921f6e.ttf",
-    "static/media/brand-name.png": "/vanhorn-contractors/static/media/brand-name.b2c5883e2a573dfb8d6d.png",
-    "static/media/Engine.ttf": "/vanhorn-contractors/static/media/Engine.c34876ef7d29889f7eed.ttf",
     "static/media/placeholder.jpg": "/vanhorn-contractors/static/media/placeholder.e83e00e04a871eaf1317.jpg",
     "index.html": "/vanhorn-contractors/index.html",
-    "main.226f39b8.css.map": "/vanhorn-contractors/static/css/main.226f39b8.css.map",
-    "main.42b7e487.js.map": "/vanhorn-contractors/static/js/main.42b7e487.js.map"
+    "main.cb9d0786.css.map": "/vanhorn-contractors/static/css/main.cb9d0786.css.map",
+    "main.b3e10ed4.js.map": "/vanhorn-contractors/static/js/main.b3e10ed4.js.map"
   },
   "entrypoints": [
-    "static/css/main.226f39b8.css",
-    "static/js/main.42b7e487.js"
+    "static/css/main.cb9d0786.css",
+    "static/js/main.b3e10ed4.js"
   ]
 }
