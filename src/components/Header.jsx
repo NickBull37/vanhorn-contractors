@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Typography, Paper } from '@mui/material';
-import { carpentry, carpentry2, brand } from '../utils/constants';
-import "../fonts/Cornerstone.ttf";
-import "../fonts/Knucklehead.otf";
-import "../fonts/Eros.ttf";
+import { Box, Typography } from '@mui/material';
+import { carpentry2 } from '../utils/constants';
 
 const Header = () => {
 

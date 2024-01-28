@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Typography, Card, CardMedia } from '@mui/material';
-import { cabinetService, paintingService, furnitureService, electricalService, plumbingService } from '../utils/constants';
+import { cabinetService, paintingService, electricalService, plumbingService } from '../utils/constants';
 
 const ServicesPage = () => {
     return (
@@ -17,11 +17,11 @@ const ServicesPage = () => {
                 >
                     <Box>
                         <Typography
-                            className="engine"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2rem", md: "2.875rem" }
+                                fontSize: { xs: "2rem", md: "2.75rem" }
                             }}
                         >
                             Cabinetry & Trim
@@ -30,12 +30,12 @@ const ServicesPage = () => {
                             elevation={12}
                             raised={true}
                             sx={{
-                                maxWidth: { xs: "300px", md: "390px" },
-                                minWidth: { xs: "300px", md: "390px" },
+                                maxWidth: { xs: "300px", md: "400px" },
+                                minWidth: { xs: "300px", md: "400px" },
                             }}
                         >
                             <CardMedia
-                                sx={{ height: 200 }}
+                                sx={{ height: 250 }}
                                 image={cabinetService}
                                 title="cabinetry service"
                             >
@@ -122,14 +122,14 @@ const ServicesPage = () => {
                     </Stack>
                     <Box>
                         <Typography
-                            className="progress-reg"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2rem", md: "2.4rem" }
+                                fontSize: { xs: "2rem", md: "2.75rem" }
                             }}
                         >
-                            Electrical&nbsp;&nbsp;<span className="progress-reg-small">(minor)</span>
+                            Electrical <span className="wordmean-small ls2">(minor)</span>
                         </Typography>
                         <Card
                             elevation={12}
@@ -140,7 +140,7 @@ const ServicesPage = () => {
                             }}
                         >
                             <CardMedia
-                                sx={{ height: 200 }}
+                                sx={{ height: 250 }}
                                 image={electricalService}
                                 title="electrical service"
                             >
@@ -161,25 +161,25 @@ const ServicesPage = () => {
                 >
                     <Box>
                         <Typography
-                            className="eros"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2rem", md: "2.5rem" }
+                                fontSize: { xs: "2rem", md: "2.75rem" }
                             }}
                         >
-                            Plumbing&nbsp;&nbsp;<span className="eros-small"><span className="lift-bracket">[</span>minor<span className="lift-bracket">]</span></span>
+                            Plumbing <span className="wordmean-small ls2">(minor)</span>
                         </Typography>
                         <Card
                             elevation={12}
                             raised={true}
                             sx={{
-                                maxWidth: { xs: "300px", md: "360px" },
-                                minWidth: { xs: "300px", md: "360px" },
+                                maxWidth: { xs: "300px", md: "400px" },
+                                minWidth: { xs: "300px", md: "400px" },
                             }}
                         >
                             <CardMedia
-                                sx={{ height: 200 }}
+                                sx={{ height: 250 }}
                                 image={plumbingService}
                                 title="plumbing service"
                             >
@@ -272,18 +272,25 @@ const ServicesPage = () => {
                     </Stack>
                     <Box>
                         <Typography
-                            className="wordmean"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 2,
-                                fontSize: { xs: "2rem", md: "2.95rem" }
+                                fontSize: { xs: "2rem", md: "2.75rem" }
                             }}
                         >
                             PAINTING
                         </Typography>
-                        <Card elevation={12} raised={true} sx={{ maxWidth: "300px", minWidth: "300px" }}>
+                        <Card
+                            elevation={12}
+                            raised={true}
+                            sx={{
+                                maxWidth: { xs: "300px", md: "400px" },
+                                minWidth: { xs: "300px", md: "400px" },
+                            }}
+                        >
                             <CardMedia
-                                sx={{ height: 200 }}
+                                sx={{ height: 250 }}
                                 image={paintingService}
                                 title="painting service"
                             >
@@ -338,8 +345,8 @@ const ServicesPage = () => {
                     >
                         <Stack gap={1}>
                             <Typography
-                                className="eros"
-                                sx={{ fontSize: "1.75rem" }}
+                                className="wordmean ls2"
+                                sx={{ fontSize: "1.5rem" }}
                             >
                                 Any job - Big or Small
                             </Typography>

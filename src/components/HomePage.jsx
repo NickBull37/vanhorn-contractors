@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { styled } from '@mui/material/styles';
 import { Box, Stack, Typography, Button, Card, CardMedia, Paper, Rating } from '@mui/material';
-import { cabinetService, paintingService, furnitureService, electricalService, plumbingService } from '../utils/constants';
-import { brand2 } from '../utils/constants';
+import { cabinetService, paintingService, electricalService, plumbingService } from '../utils/constants';
 
 const BrownButton = styled(Button)(() => ({
     '&:hover': {
@@ -119,7 +118,7 @@ const HomePage = () => {
                                             height: {xs: 200, md: 150 }
                                         }}
                                         image={cabinetService}
-                                        title="green iguana"
+                                        title="cabinet service"
                                     >
 
                                     </CardMedia>
@@ -152,7 +151,7 @@ const HomePage = () => {
                                             height: {xs: 200, md: 150 }
                                         }}
                                         image={electricalService}
-                                        title="green iguana"
+                                        title="electrical service"
                                     >
 
                                     </CardMedia>
@@ -185,7 +184,7 @@ const HomePage = () => {
                                             height: {xs: 200, md: 150 }
                                         }}
                                         image={plumbingService}
-                                        title="green iguana"
+                                        title="plumbing service"
                                     >
 
                                     </CardMedia>
@@ -218,7 +217,7 @@ const HomePage = () => {
                                             height: {xs: 200, md: 150 }
                                         }}
                                         image={paintingService}
-                                        title="green iguana"
+                                        title="painting service"
                                     >
 
                                     </CardMedia>

@@ -17,11 +17,11 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
-                            className="progress-reg"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 1,
-                                fontSize: { xs: "2.125rem", md: "3rem" }
+                                fontSize: { xs: "2.125rem", md: "2.5rem" }
                             }}
                         >
                             About
@@ -40,11 +40,11 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
-                            className="eros"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 1,
-                                fontSize: { xs: "2.125rem", md: "3rem" }
+                                fontSize: { xs: "2.125rem", md: "2.5rem" }
                             }}
                         >
                             Hours
@@ -91,11 +91,11 @@ const AboutPage = () => {
                 <Grid item xs={12} md={6}>
                     <Stack>
                         <Typography
-                            className="engine"
+                            className="wordmean ls2"
                             variant="h3"
                             sx={{
                                 mb: 1,
-                                fontSize: { xs: "2.125rem", md: "3rem" }
+                                fontSize: { xs: "2.125rem", md: "2.5rem" }
                             }}
                         >
                             Services

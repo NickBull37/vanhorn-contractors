@@ -80,66 +80,6 @@ a {
 }
 
 @font-face {
-    font-family: 'Engine';
-    src: local('Engine'),
-         url('./fonts/Engine.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Cornerstone';
-    src: local('Cornerstone'),
-         url('./fonts/Cornerstone.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Knucklehead';
-    src: local('Knucklehead'),
-         url('./fonts/Knucklehead.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Eros';
-    src: local('Eros'),
-         url('./fonts/Eros.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Brosh';
-    src: local('Brosh'),
-         url('./fonts/Brosh.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Kepo';
-    src: local('Kepo'),
-         url('./fonts/Kepo.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Progress';
-    src: local('Progress'),
-         url('./fonts/Progress.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'ProgressReg';
-    src: local('ProgressReg'),
-         url('./fonts/ProgressReg.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Salvar';
-    src: local('Salvar'),
-         url('./fonts/Salvar.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Signwood';
-    src: local('Signwood'),
-         url('./fonts/Signwood.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'Wordmean';
     src: local('Wordmean'),
          url('./fonts/Wordmean.ttf') format('truetype');
@@ -176,7 +116,12 @@ a {
 
 .wordmean-small {
     font-family: Wordmean !important;
-    font-size: 2rem;
+    font-size: 1.75rem !important;
+}
+
+.wordmean-xs {
+    font-family: Wordmean !important;
+    font-size: 1.75rem !important;
 }
 
 .ls1 {
@@ -196,106 +141,6 @@ a {
 }
 /* -------- */
 
-.knucklehead {
-    font-family: Knucklehead !important;
-    letter-spacing: 6px !important;
-}
-
-.knucklehead-small {
-    font-family: Knucklehead !important;
-    letter-spacing: 6px !important;
-    font-size: 2rem;
-}
-
-.brosh {
-    font-family: Brosh !important;
-    letter-spacing: 5px !important;
-    /* font-size: 3rem; */
-}
-
-.kepo {
-    font-family: Kepo !important;
-    letter-spacing: 8px !important;
-    /* font-weight: bold; */
-}
-
-.eros {
-    font-family: Eros !important;
-    letter-spacing: 1px !important;
-}
-
-.eros-small {
-    font-family: Eros !important;
-    letter-spacing: 1px !important;
-    font-size: 1.5rem;
-}
-
-.progress {
-    font-family: Progress !important;
-    letter-spacing: 3px !important;
-}
-
-.progress-reg {
-    font-family: ProgressReg !important;
-    letter-spacing: 3px !important;
-}
-
-.progress-reg-small {
-    font-family: ProgressReg !important;
-    letter-spacing: 3px !important;
-    font-size: 1.25rem;
-}
-
-.salvar {
-    font-family: Salvar !important;
-    /* letter-spacing: 6px !important; */
-    /* font-weight: bold; */
-}
-
-.signwood {
-    font-family: Signwood !important;
-    letter-spacing: 3px !important;
-    /* font-weight: bold; */
-}
-
-.engine {
-    font-family: Engine !important;
-    letter-spacing: 8px !important;
-}
-
-.engine-spaced {
-    font-family: Engine !important;
-    letter-spacing: 8px !important;
-}
-
-.engine-spaced-small {
-    font-family: Engine !important;
-    letter-spacing: 8px !important;
-    line-height: 1.1 !important;
-    font-size: 1.75rem;
-}
-
-.title-cap {
-    font-family: Engine !important;
-    letter-spacing: 4px !important;
-    line-height: 1.1 !important;
-    font-size: 2.5rem;
-}
-
-.heading-cap {
-    font-family: Engine !important;
-    letter-spacing: 8px !important;
-    line-height: 1.1 !important;
-    font-size: 3.5rem;
-}
-
-.nav-cap {
-    font-family: Engine !important;
-    /* letter-spacing: 8px !important; */
-    line-height: 1.1 !important;
-    font-size: 1.375rem;
-}
-
 .text-2 {
     font-size: 2.5rem;
 }
@@ -310,18 +155,6 @@ a {
 ********************************************************************************************************************************************/
 #header {
     padding: 15px 10%;
-}
-
-.cornerstone {
-    font-family: Cornerstone !important;
-    letter-spacing: 5px !important;
-    line-height: 1.1 !important;
-}
-
-.cornerstone-title {
-    font-family: Cornerstone !important;
-    /* letter-spacing: 3px !important; */
-    line-height: 1.1 !important;
 }
 
 nav {
@@ -457,7 +290,6 @@ nav .fa-solid {
     padding: 10px 20px;
     
 }
-
 
 
 /********************************************************************************************************************************************

@@ -1,17 +1,10 @@
 // IMAGES
 
-// ----- Header Imgs ----- //
-export const brand = require("../images/brand-name.png");
-export const brand2 = require("../images/brand-name2.png");
-
 
 // ----- Stock Imgs ----- //
 export const carpentry = require("../images/carpentry.png");
 export const carpentry2 = require("../images/carpentry2.png");
 export const placeHolder = require("../images/placeholder.jpg");
-export const cabinet = require("../images/cabinet.png");
-export const paint = require("../images/painting.png");
-export const furniture = require("../images/furniture.png");
 
 // ----- Service Imgs ----- //
 export const cabinetService = require("../images/cabinet-service.jpg");
