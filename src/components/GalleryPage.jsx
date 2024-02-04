@@ -27,6 +27,9 @@ const GalleryPage = () => {
                     variant="h3"
                     mb={1}
                     px={2}
+                    sx={{
+                        fontSize: {xs: "2rem", md: "3rem"}
+                    }}
                 >
                     Custom Cabinets
                 </Typography>
@@ -52,6 +55,9 @@ const GalleryPage = () => {
                     variant="h3"
                     mb={1}
                     px={2}
+                    sx={{
+                        fontSize: {xs: "2rem", md: "3rem"}
+                    }}
                 >
                     Custom Bar
                 </Typography>
@@ -78,8 +84,21 @@ const GalleryPage = () => {
                     variant="h3"
                     mb={1}
                     px={2}
+                    sx={{
+                        fontSize: {xs: "2rem", md: "3rem"}
+                    }}
                 >
-                    Exterior Painting&nbsp;&nbsp;<span className="wordmean-small ls2">(before & afters)</span>
+                    Exterior Painting&nbsp;&nbsp;
+                    <span className="wordmean-small ls2">
+                        <span
+                            sx={{
+                                display: {xs: "block", md: "none"}
+                            }}
+                        >
+                            <br />
+                        </span>
+                        (before & afters)
+                    </span>
                 </Typography>
                 <Box
                     width="80vw"
@@ -104,6 +123,9 @@ const GalleryPage = () => {
                     variant="h3"
                     mb={1}
                     px={2}
+                    sx={{
+                        fontSize: {xs: "2rem", md: "3rem"}
+                    }}
                 >
                     Porch Renovation
                 </Typography>
@@ -129,8 +151,11 @@ const GalleryPage = () => {
                     variant="h3"
                     mb={4}
                     px={2}
+                    sx={{
+                        fontSize: {xs: "2rem", md: "3rem"}
+                    }}
                 >
-                    Miscellaneous Projects
+                    Misc Projects
                 </Typography>
                 <Typography
                     className="wordmean-small ls2"
@@ -138,7 +163,7 @@ const GalleryPage = () => {
                     mb={1}
                     px={2}
                 >
-                    Custom Storage Solution
+                    Storage Closet
                 </Typography>
                 <Box
                     width="80vw"

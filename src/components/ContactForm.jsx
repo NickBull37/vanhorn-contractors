@@ -100,6 +100,7 @@ const ContactFormPage = () => {
                     flexDirection="column"
                 >
                     <Typography
+                        className="wordmean ls2"
                         variant="h3"
                         mb={1}
                     >
